@@ -1,0 +1,48 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  padding-bottom: 1.2rem;
+  user-select: none;
+
+  & h3 {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+  }
+
+  & ul {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 2.2rem;
+
+    & li {
+      line-height: 150%;
+    }
+  }
+
+  & strong {
+    position: absolute;
+    bottom: 0rem;
+    background-color: #000;
+    color: var(--white);
+    display: block;
+    align-self: center;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    padding-bottom: 3rem;
+
+    & strong {
+      bottom: 2rem;
+    }
+  }
+}

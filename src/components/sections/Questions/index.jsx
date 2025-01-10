@@ -1,0 +1,168 @@
+import styles from "./questions.module.css";
+import Title from "../../shared/Title";
+import { TiArrowDown, TiArrowUp } from "react-icons/ti";
+import { useState } from "react";
+
+const Questions = () => {
+  const [item1, setItem1] = useState(false);
+  const [item2, setItem2] = useState(false);
+  const [item3, setItem3] = useState(false);
+  const [item4, setItem4] = useState(false);
+  const [item5, setItem5] = useState(false);
+  const [item6, setItem6] = useState(false);
+  const [item7, setItem7] = useState(false);
+  const [item8, setItem8] = useState(false);
+  return (
+    <section className="container-default">
+      <Title text="Perguntas frequentes" align="center" color={1} />
+      <ul className={styles.list}>
+        <li>
+          <div>
+            <h4 onClick={() => setItem1(!item1)}>
+              Meia entrada {item1 ? <TiArrowUp /> : <TiArrowDown />}
+            </h4>
+            {item1 && (
+              <div>
+                <p>
+                  Para obter meia-entrada, é necessário apresentar a Carteira de
+                  Identificação Estudantil (CIE) ou documento equivalente.
+                  Também são elegíveis pessoas com deficiência e seus
+                  acompanhantes, famílias atípicas, idosos, jovens de baixa
+                  renda e educadores, mediante documentação comprobatória
+                </p>
+              </div>
+            )}
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4 onClick={() => setItem2(!item2)}>
+              Meia entrada <TiArrowDown />
+            </h4>
+            {item2 && (
+              <div>
+                <p>
+                  Para obter meia-entrada, é necessário apresentar a Carteira de
+                  Identificação Estudantil (CIE) ou documento equivalente.
+                  Também são elegíveis pessoas com deficiência e seus
+                  acompanhantes, famílias atípicas, idosos, jovens de baixa
+                  renda e educadores, mediante documentação comprobatória
+                </p>
+              </div>
+            )}
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4 onClick={() => setItem3(!item3)}>
+              Meia entrada <TiArrowDown />
+            </h4>
+            {item3 && (
+              <div>
+                <p>
+                  Para obter meia-entrada, é necessário apresentar a Carteira de
+                  Identificação Estudantil (CIE) ou documento equivalente.
+                  Também são elegíveis pessoas com deficiência e seus
+                  acompanhantes, famílias atípicas, idosos, jovens de baixa
+                  renda e educadores, mediante documentação comprobatória
+                </p>
+              </div>
+            )}
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4 onClick={() => setItem4(!item4)}>
+              Meia entrada <TiArrowDown />
+            </h4>
+            {item4 && (
+              <div>
+                <p>
+                  Para obter meia-entrada, é necessário apresentar a Carteira de
+                  Identificação Estudantil (CIE) ou documento equivalente.
+                  Também são elegíveis pessoas com deficiência e seus
+                  acompanhantes, famílias atípicas, idosos, jovens de baixa
+                  renda e educadores, mediante documentação comprobatória
+                </p>
+              </div>
+            )}
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4 onClick={() => setItem5(!item5)}>
+              Meia entrada <TiArrowDown />
+            </h4>
+            {item5 && (
+              <div>
+                <p>
+                  Para obter meia-entrada, é necessário apresentar a Carteira de
+                  Identificação Estudantil (CIE) ou documento equivalente.
+                  Também são elegíveis pessoas com deficiência e seus
+                  acompanhantes, famílias atípicas, idosos, jovens de baixa
+                  renda e educadores, mediante documentação comprobatória
+                </p>
+              </div>
+            )}
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4 onClick={() => setItem6(!item6)}>
+              Meia entrada <TiArrowDown />
+            </h4>
+            {item6 && (
+              <div>
+                <p>
+                  Para obter meia-entrada, é necessário apresentar a Carteira de
+                  Identificação Estudantil (CIE) ou documento equivalente.
+                  Também são elegíveis pessoas com deficiência e seus
+                  acompanhantes, famílias atípicas, idosos, jovens de baixa
+                  renda e educadores, mediante documentação comprobatória
+                </p>
+              </div>
+            )}
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4 onClick={() => setItem7(!item7)}>
+              Meia entrada <TiArrowDown />
+            </h4>
+            {item7 && (
+              <div>
+                <p>
+                  Para obter meia-entrada, é necessário apresentar a Carteira de
+                  Identificação Estudantil (CIE) ou documento equivalente.
+                  Também são elegíveis pessoas com deficiência e seus
+                  acompanhantes, famílias atípicas, idosos, jovens de baixa
+                  renda e educadores, mediante documentação comprobatória
+                </p>
+              </div>
+            )}
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4 onClick={() => setItem8(!item8)}>
+              Meia entrada <TiArrowDown />
+            </h4>
+            {item8 && (
+              <div>
+                <p>
+                  Para obter meia-entrada, é necessário apresentar a Carteira de
+                  Identificação Estudantil (CIE) ou documento equivalente.
+                  Também são elegíveis pessoas com deficiência e seus
+                  acompanhantes, famílias atípicas, idosos, jovens de baixa
+                  renda e educadores, mediante documentação comprobatória
+                </p>
+              </div>
+            )}
+          </div>
+        </li>
+      </ul>
+    </section>
+  );
+};
+
+export default Questions;

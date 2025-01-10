@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  display: flex;
+  & h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+[data-align="center"] {
+  justify-content: center;
+  align-items: center;
+}
+
+[data-align="start"] {
+  justify-content: space-between;
+  align-items: center;
+}
+
+[data-color="1"] {
+  color: var(--color-1);
+}
+
+[data-color="2"] {
+  color: var(--color-2);
+}
+
+[data-color="3"] {
+  color: var(--color-3);
+}

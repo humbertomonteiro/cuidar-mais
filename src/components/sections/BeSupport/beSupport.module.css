@@ -1,0 +1,41 @@
+.container {
+  padding: 1.5rem;
+  margin-top: 2.5rem;
+  background-color: var(--color-4);
+
+  & p {
+    color: var(--dark-gray-1);
+    line-height: 150%;
+    max-width: 1000px;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+  }
+
+  & .buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
