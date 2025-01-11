@@ -10,6 +10,7 @@ import CarouselSimple from "./components/shared/CarouselSimple";
 
 import { itemsOurSevices } from "./data/constants/OurServices";
 import { ItemsSponsors } from "./data/constants/Sponsors";
+import { itemsSpeakers } from "./data/constants/Speakers";
 
 import { useState, useEffect } from "react";
 import Footer from "./components/templates/Footer";
@@ -37,6 +38,11 @@ function App() {
       <Main>
         <CarouselScrollInfinit />
         <OurMission />
+        <CarouselSimple
+          slides={itemsSpeakers}
+          numberSlidesView={visibleItems - 1}
+          textTitle="Palestrantes"
+        />
         <Specialty />
         <Form />
         <BeSupport />

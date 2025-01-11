@@ -8,7 +8,7 @@ import Title from "../../shared/Title";
 const Specialty = () => {
   return (
     <section className={styles.container}>
-      <Title text="Especialidades" align="center" color={1} />
+      <Title text="Especialidades" align="center" color={4} />
       <div className={styles.boxes}>
         <article>
           <LuBrainCog />

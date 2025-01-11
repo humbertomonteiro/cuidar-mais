@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   & h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
   }
 }
@@ -10,6 +10,7 @@
 [data-align="center"] {
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 [data-align="start"] {
@@ -19,6 +20,7 @@
 
 [data-color="1"] {
   color: var(--color-1);
+  text-shadow: -2px 2px 0px var(--color-4);
 }
 
 [data-color="2"] {
@@ -27,4 +29,9 @@
 
 [data-color="3"] {
   color: var(--color-3);
+}
+
+[data-color="4"] {
+  color: var(--white);
+  text-shadow: -2px 2px 0px var(--color-1);
 }

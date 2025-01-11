@@ -14,7 +14,7 @@ const Questions = () => {
   const [item8, setItem8] = useState(false);
   return (
     <section className="container-default">
-      <Title text="Perguntas frequentes" align="center" color={1} />
+      <Title text="Perguntas frequentes" align="center" color={4} />
       <ul className={styles.list}>
         <li>
           <div>

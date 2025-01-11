@@ -11,7 +11,7 @@ const CarouselSimple = ({
 }) => {
   return (
     <div className={styles.container}>
-      <Title text={textTitle} align="center" color={1} />
+      <Title text={textTitle} align="center" color={4} />
       <div className="container-default">
         <Swiper
           pagination={true}
