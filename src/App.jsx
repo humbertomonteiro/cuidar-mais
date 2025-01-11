@@ -14,6 +14,7 @@ import { itemsSpeakers } from "./data/constants/Speakers";
 
 import { useState, useEffect } from "react";
 import Footer from "./components/templates/Footer";
+import TopBar from "./components/sections/TopBar";
 
 function App() {
   const [visibleItems, setVisibleItems] = useState(4);
@@ -34,6 +35,11 @@ function App() {
 
   return (
     <>
+      <TopBar
+        text={"Quer participar do próximo congresso?"}
+        action={"link"}
+        textAction={"Clique aqui !"}
+      />
       <Header />
       <Main>
         <CarouselScrollInfinit />
@@ -50,6 +56,7 @@ function App() {
           slides={itemsOurSevices}
           textTitle="Nossos Serviços"
           delay={4000}
+          numberSlidesView={visibleItems - 1}
         />
         <CarouselSimple
           slides={ItemsSponsors}

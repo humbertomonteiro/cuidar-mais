@@ -1,0 +1,37 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-1);
+  color: var(--white);
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--gray);
+
+  & a,
+  button {
+    background-color: var(--color-4);
+    color: var(--color-1);
+    font-weight: bold;
+    border: 1px solid var(--dark-gray-2);
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+  }
+
+  & a:hover,
+  button:hover {
+    background-color: var(--color-1);
+    color: var(--white);
+    border: 1px solid var(--white);
+  }
+}
