@@ -6,11 +6,8 @@ const Item1 = () => {
       <div className={styles.content}>
         <h3>Escola de Lutas</h3>
         <p>
-          Transforme sua energia em disciplina e confiança com nossa Escola de
-          Lutas. Oferecemos aulas práticas para crianças, jovens e adultos, com
-          foco em técnicas de artes marciais que promovem o bem-estar físico e
-          mental. Aqui, cada movimento é um passo em direção ao equilíbrio, à
-          resiliência e à superação pessoal.
+          Oferecemos aulas práticas para crianças, jovens e adultos, com foco em
+          técnicas de artes marciais que promovem o bem-estar físico e mental.
         </p>
       </div>
       <img
@@ -28,9 +25,7 @@ const Item2 = () => {
         <h3>Cursos</h3>
         <p>
           Invista no seu desenvolvimento com nossos cursos especialmente
-          planejados para transformar conhecimento em prática. Oferecemos
-          conteúdos variados, voltados para habilidades essenciais no dia a dia,
-          formação profissional e crescimento pessoal.
+          planejados para transformar conhecimento em prática.
         </p>
       </div>
       {/* <div className={styles.img}> */}
@@ -49,12 +44,9 @@ const Item3 = () => {
       <div className={styles.content}>
         <h3>Musicalização infantil</h3>
         <p>
-          Descubra o poder da música no desenvolvimento de crianças com TEA.
           Nossas atividades são cuidadosamente planejadas para estimular
           habilidades cognitivas, sociais e emocionais, promovendo aprendizado e
-          interação de forma lúdica e envolvente. Acreditamos que a música é uma
-          ponte para o crescimento e a expressão, criando momentos
-          significativos e transformadores.
+          interação de forma lúdica e envolvente.
         </p>
       </div>
       {/* <div className={styles.img}> */}

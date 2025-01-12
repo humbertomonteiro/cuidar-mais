@@ -4,10 +4,11 @@ import { BiConversation } from "react-icons/bi";
 import { TbTools } from "react-icons/tb";
 import { HiOutlineBookOpen } from "react-icons/hi2";
 import Title from "../../shared/Title";
+import Section from "../../shared/Section";
 
 const Specialty = () => {
   return (
-    <section className={styles.container}>
+    <Section>
       <Title text="Especialidades" align="center" color={4} />
       <div className={styles.boxes}>
         <article>
@@ -45,7 +46,7 @@ const Specialty = () => {
           <p>Apoio escolar e inclusão no ambiente educativo.</p>
         </article>
       </div>
-    </section>
+    </Section>
   );
 };
 

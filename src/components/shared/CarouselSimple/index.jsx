@@ -2,6 +2,7 @@ import styles from "./carouselSimple.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import Title from "../Title";
+import Section from "../Section";
 
 const CarouselSimple = ({
   slides,
@@ -10,11 +11,13 @@ const CarouselSimple = ({
   delay = 3000,
 }) => {
   return (
-    <div className={styles.container}>
-      <Title text={textTitle} align="center" color={4} />
-      <div className="container-default">
+    <Section>
+      <div className={styles.container}>
+        <Title text={textTitle} align="center" color={4} />
         <Swiper
-          pagination={true}
+          pagination={{
+            clickable: true,
+          }}
           slidesPerView={numberSlidesView}
           spaceBetween={30}
           autoplay={{
@@ -29,7 +32,7 @@ const CarouselSimple = ({
           ))}
         </Swiper>
       </div>
-    </div>
+    </Section>
   );
 };
 

@@ -18,6 +18,7 @@
   cursor: pointer;
   z-index: 1;
   min-height: 48px;
+  font-family: var(--font-1);
 }
 .button:after {
   content: "";

@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   height: 100vh;
+  max-height: 950px;
   background: var(--color-4);
   margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--light-gray);

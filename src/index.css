@@ -4,8 +4,8 @@
   --color-1: #1cb4a7ee;
   --color-2: #e26891ee;
   --color-3: #f3c88dee;
-  --color-4: #f6f5f3f1;
-  --color-5: #70c0de;
+  --color-4: #f6f5f3d3;
+  --color-5: #1cb4a7c7;
   --gray: #d9d9d9;
   --dark-gray: #4e4e4e;
   --dark-gray-1: #555555;
@@ -43,7 +43,7 @@ body {
 }
 
 .bubbles {
-  background-image: linear-gradient(to top, #f6f5f3b6, #1cb4a76c),
+  background-image: linear-gradient(to top, #f6f5f3c7, #1cb4a7a8),
     url("https://img.freepik.com/fotos-gratis/pessoas-que-participam-de-um-evento-de-alto-protocolo_23-2150951233.jpg?t=st=1735929321~exp=1735932921~hmac=4c8612dcaf375288e39a3ee3af480b0c0aebf605e9aa21b6e2764867c88d17a6&w=740");
   background-size: cover;
   background-position: center;
@@ -104,12 +104,6 @@ body {
   animation-delay: 10s;
   left: 50vw;
   top: 10vh;
-}
-
-.container-default {
-  width: 1400px;
-  max-width: 95%;
-  margin: 0 auto;
 }
 
 @-webkit-keyframes cube {

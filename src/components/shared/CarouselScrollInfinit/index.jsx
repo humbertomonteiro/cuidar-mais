@@ -1,4 +1,5 @@
 import styles from "./carouselScrollInfinit.module.css";
+import Section from "../Section";
 
 const imagesnLogos = [
   {
@@ -20,31 +21,33 @@ const imagesnLogos = [
 
 const CarouselScrollInfinit = () => {
   return (
-    <div className={styles.carousel}>
-      <div className={styles.group}>
-        {imagesnLogos.map((item, index) => (
-          <div key={index} className={styles.card}>
-            <img
-              className={styles.img}
-              src={item.img}
-              alt={`Imagem logo: ${index}`}
-            />
-          </div>
-        ))}
+    <Section>
+      <div className={styles.carousel}>
+        <div className={styles.group}>
+          {imagesnLogos.map((item, index) => (
+            <div key={index} className={styles.card}>
+              <img
+                className={styles.img}
+                src={item.img}
+                alt={`Imagem logo: ${index}`}
+              />
+            </div>
+          ))}
+        </div>
+        <div arial-hidden="true" className={styles.group}>
+          {imagesnLogos.map((item, index) => (
+            <div key={index} className={styles.card}>
+              <img
+                loading="lazy"
+                className={styles.img}
+                src={item.img}
+                alt={`Imagem logo: ${index}`}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-      <div arial-hidden="true" className={styles.group}>
-        {imagesnLogos.map((item, index) => (
-          <div key={index} className={styles.card}>
-            <img
-              loading="lazy"
-              className={styles.img}
-              src={item.img}
-              alt={`Imagem logo: ${index}`}
-            />
-          </div>
-        ))}
-      </div>
-    </div>
+    </Section>
   );
 };
 

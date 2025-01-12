@@ -14,11 +14,7 @@ const BeSupport = () => {
         <section>
           <Title text="Seja um Apoiador" align="center" color={1} />
           <p>
-            Transforme vidas e faça parte de uma causa que realmente importa. Ao
-            apoiar nosso projeto, você contribui para criar um mundo mais
-            inclusivo e cheio de oportunidades para pessoas com TEA. Venha fazer
-            a diferença conosco e inspire outros a caminhar conosco nessa
-            jornada!
+            Transforme vidas e faça parte de uma causa que realmente importa!
           </p>
           <div className={styles.desktop}>
             <CarouselSimple slides={itemsBoxesSupport} numberSlidesView={3} />
