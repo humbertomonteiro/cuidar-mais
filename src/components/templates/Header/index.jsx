@@ -3,21 +3,22 @@ import logo from "../../../assets/logos/logo-congresso.png";
 // import Button from "../../shared/Button";
 import ButtonSecondary from "../../shared/ButtonSecondary";
 import logosTel from "../../../assets/logos/logos-telefone.png";
+import { IoRocketOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
     <header className={styles.container}>
       <div className={styles.content}>
         <img src={logo} alt="Logo Salud" />
-        <h1>Terceira edição do Congresso Cuidar +</h1>
+        <h1>Terceira edição do nosso Congresso!</h1>
         <p>
           Junte-se a especialistas, profissionais da saúde e educadores em um
           encontro dedicado à conscientização e troca de conhecimento.
         </p>
         {/* <Button action="click">Quero participar</Button> */}
 
-        <ButtonSecondary action={"link"} styleButton="secondary">
-          Quero participar
+        <ButtonSecondary action={"link"}>
+          Quero participar <IoRocketOutline style={{ fontSize: "1.7rem" }} />
         </ButtonSecondary>
       </div>
       <div className={styles.img}>

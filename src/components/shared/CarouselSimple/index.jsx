@@ -13,7 +13,7 @@ const CarouselSimple = ({
   return (
     <Section>
       <div className={styles.container}>
-        <Title text={textTitle} align="center" color={4} />
+        {textTitle && <Title text={textTitle} align="center" />}
         <Swiper
           pagination={{
             clickable: true,

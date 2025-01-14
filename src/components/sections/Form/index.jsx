@@ -2,6 +2,8 @@ import ButtonSecondary from "../../shared/ButtonSecondary";
 import Section from "../../shared/Section";
 import styles from "./form.module.css";
 
+import { FaArrowRight } from "react-icons/fa";
+
 const Form = () => {
   return (
     <Section>
@@ -31,8 +33,8 @@ const Form = () => {
             <span>Whatsapp</span>
             <input type="number" placeholder="Ex: 11 900000000" />
           </label>
-          <ButtonSecondary action="click" styleButton={"secondary"}>
-            Junte-se a nós
+          <ButtonSecondary action="click">
+            Junte-se a nós <FaArrowRight />
           </ButtonSecondary>
         </form>
       </div>

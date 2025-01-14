@@ -1,0 +1,11 @@
+.container {
+  background-color: var(--color-4);
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+  & .box {
+    & h3 {
+      color: var(--text-1);
+    }
+  }
+}

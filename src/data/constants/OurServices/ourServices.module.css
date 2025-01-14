@@ -22,11 +22,11 @@
   & h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: var(--color-1);
+    color: var(--text-1);
   }
 
   & p {
-    color: var(--dark-gray-1);
+    color: var(--text-2);
     line-height: 150%;
     font-size: 1rem;
     margin-bottom: 0.5rem;

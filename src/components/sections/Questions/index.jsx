@@ -6,6 +6,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import ButtonSecondary from "../../shared/ButtonSecondary";
 import Section from "../../shared/Section";
 
+import { FaArrowRight } from "react-icons/fa";
+
 const Questions = () => {
   const [item1, setItem1] = useState(false);
   const [item2, setItem2] = useState(false);
@@ -17,14 +19,14 @@ const Questions = () => {
   const [item8, setItem8] = useState(false);
   return (
     <Section>
-      <Title text="Perguntas frequentes" align="center" color={4} />
+      <Title text="Perguntas frequentes" align="center" />
       <div className={styles.container}>
         <div href="#" className={styles.box}>
           <FaWhatsapp />
           <h3>Prefere falar com nosso time?</h3>
-          <p>Time de suporte Whatsapp</p>
-          <ButtonSecondary styleButton="secondary">
-            Falar com nosso time
+          <p>Fale com nosso time de suporte pelo Whatsapp</p>
+          <ButtonSecondary>
+            Clique aqui <FaArrowRight />
           </ButtonSecondary>
         </div>
         <ul className={styles.list}>

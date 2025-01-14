@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --color-1: #1cb4a7ee;
-  --color-2: #e26891ee;
-  --color-3: #f3c88dee;
-  --color-4: #f6f5f3d3;
-  --color-5: #1cb4a7c7;
+  --color-1: #1cb4a7;
+  --color-2: #e26891;
+  --color-3: #f3c88d;
+  --color-4: #fff;
+  --color-5: #eafaf8;
+
+  --text-1: #1d3c3b;
+  --text-1: #4e6f6d;
+
   --gray: #d9d9d9;
   --dark-gray: #4e4e4e;
   --dark-gray-1: #555555;
@@ -43,7 +47,7 @@ body {
 }
 
 .bubbles {
-  background-image: linear-gradient(to top, #f6f5f3c7, #1cb4a7a8),
+  background-image: linear-gradient(to top, #f6f9f9e0, #f6f9f9d7),
     url("https://img.freepik.com/fotos-gratis/pessoas-que-participam-de-um-evento-de-alto-protocolo_23-2150951233.jpg?t=st=1735929321~exp=1735932921~hmac=4c8612dcaf375288e39a3ee3af480b0c0aebf605e9aa21b6e2764867c88d17a6&w=740");
   background-size: cover;
   background-position: center;
@@ -73,7 +77,7 @@ body {
   animation: cube 19s ease-in forwards infinite;
 }
 .cube:nth-child(2n) {
-  border-color: #1cb4a7b9;
+  border-color: var(--gray);
 }
 .cube:nth-child(2) {
   -webkit-animation-delay: 2s;

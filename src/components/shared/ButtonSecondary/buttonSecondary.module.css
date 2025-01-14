@@ -38,7 +38,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: var(--color-3);
+  background-color: #139082;
   transition: all 0.3s;
   border-radius: 10rem;
   z-index: -1;
@@ -51,12 +51,16 @@
 }
 
 [data-style-button="secondary"] {
-  background: var(--color-);
+  background: var(--color-2);
   color: var(--white);
 }
 
 [data-style-button="secondary"]::after {
   background-color: var(--color-2);
+}
+
+[data-style-button="secondary"]:before {
+  background-color: #c25579;
 }
 
 @media (max-width: 480px) {

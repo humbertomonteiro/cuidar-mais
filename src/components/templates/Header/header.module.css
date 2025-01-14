@@ -5,7 +5,6 @@
   max-height: 950px;
   background: var(--color-4);
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--light-gray);
   position: relative;
 }
 
@@ -18,7 +17,6 @@
   gap: 1rem;
   text-align: center;
   padding: 1rem;
-  color: var(--color-1);
 
   & img {
     width: 250px;
@@ -27,12 +25,18 @@
   & h1 {
     font-size: 2.7rem;
     max-width: 500px;
+    color: var(--text-1);
+
+    & strong {
+      font-size: 2.9rem;
+      color: var(--color-2);
+    }
   }
 
   & p {
     line-height: 150%;
     max-width: 800px;
-    color: var(--dark-gray-1);
+    color: var(--text-2);
   }
 }
 
@@ -67,11 +71,7 @@
 @media (max-width: 1000px) {
   .content {
     width: 100%;
-    background-image: linear-gradient(
-        180deg,
-        #f6f5f3f3 0%,
-        rgba(252, 252, 252, 0.973) 52%
-      ),
+    background-image: linear-gradient(180deg, #fffffff6 0%, #fff 52%),
       url("https://img.freepik.com/fotos-gratis/pessoas-que-participam-de-um-evento-de-alto-protocolo_23-2150951407.jpg?t=st=1735935325~exp=1735938925~hmac=64b26d1bedd51fe9e8f7c45f9dd2ed60174888845f95ed0758c7bc09408c13f6&w=900");
     background-size: cover;
     background-position: center;
@@ -92,6 +92,14 @@
   .content {
     & img {
       width: 50%;
+    }
+
+    & h1 {
+      font-size: 2rem;
+
+      & strong {
+        font-size: 2.1rem;
+      }
     }
   }
 }

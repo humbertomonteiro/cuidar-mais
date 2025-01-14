@@ -16,6 +16,7 @@ import { useState, useEffect } from "react";
 import Footer from "./components/templates/Footer";
 import TopBar from "./components/sections/TopBar";
 import Videos from "./components/sections/Videos";
+// import Tickets from "./components/sections/Tickets";
 
 function App() {
   const [visibleItems, setVisibleItems] = useState(4);
@@ -58,13 +59,14 @@ function App() {
           delay={4000}
           numberSlidesView={visibleItems - 1}
         />
-        <Videos />
+        {/* <Tickets /> */}
         <BeSupport />
         <CarouselSimple
           slides={ItemsSponsors}
           numberSlidesView={visibleItems}
           textTitle="Patrocinadores"
         />
+        <Videos />
         <Questions />
       </Main>
       <Footer />

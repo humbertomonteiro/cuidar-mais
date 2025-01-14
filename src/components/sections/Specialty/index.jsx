@@ -9,7 +9,7 @@ import Section from "../../shared/Section";
 const Specialty = () => {
   return (
     <Section>
-      <Title text="Especialidades" align="center" color={4} />
+      <Title text="Especialidades" align="center" />
       <div className={styles.boxes}>
         <article>
           <LuBrainCog />

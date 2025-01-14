@@ -1,10 +1,9 @@
 .container {
   padding: 1.5rem;
-  margin-top: 2.5rem;
   background-color: var(--color-4);
   border-radius: 1rem;
   & p {
-    color: var(--dark-gray-1);
+    color: var(--text-2);
     line-height: 150%;
     max-width: 1000px;
     margin: 0 auto;
@@ -20,6 +19,7 @@
 
 .desktop {
   display: block;
+  margin: -1.5rem 0;
 }
 
 .mobile {
@@ -37,5 +37,6 @@
 
   .mobile {
     display: block;
+    margin: -1.5rem 0;
   }
 }

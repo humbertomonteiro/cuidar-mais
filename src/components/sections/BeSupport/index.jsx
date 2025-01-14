@@ -7,12 +7,14 @@ import { itemsBoxesSupport } from "../../../data/constants/BoxesSupport";
 import document from "../../../data/documents/congresso-autismo.pdf";
 import { FaRegFilePdf } from "react-icons/fa6";
 
+import { FaArrowRight } from "react-icons/fa";
+
 const BeSupport = () => {
   return (
     <Section>
       <div className={styles.container}>
         <section>
-          <Title text="Seja um Apoiador" align="center" color={1} />
+          <Title text="Seja um Apoiador" align="center" />
           <p>
             Transforme vidas e faça parte de uma causa que realmente importa!
           </p>
@@ -24,7 +26,7 @@ const BeSupport = () => {
           </div>
           <div className={styles.buttons}>
             <ButtonSecondary action="link" link="#">
-              Quero ser Apoiador
+              Quero ser Apoiador <FaArrowRight />
             </ButtonSecondary>
             <ButtonSecondary
               action="link"
