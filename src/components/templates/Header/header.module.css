@@ -65,6 +65,10 @@
 }
 
 @media (max-width: 1000px) {
+  .content {
+    width: 100%;
+  }
+
   .img {
     display: none;
   }
