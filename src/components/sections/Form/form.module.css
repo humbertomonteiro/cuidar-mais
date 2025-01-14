@@ -4,7 +4,7 @@
   background: var(--color-5);
   padding: 1.5rem;
   border-radius: 1rem;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--border-color);
 
   & .img {
     width: 50%;
