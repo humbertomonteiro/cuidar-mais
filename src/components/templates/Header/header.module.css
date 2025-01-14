@@ -4,6 +4,7 @@
   height: 100vh;
   max-height: 950px;
   background: var(--color-4);
+  border-bottom: 1px solid var(--border-color);
   margin-bottom: 1.5rem;
   position: relative;
 }
@@ -23,14 +24,9 @@
   }
 
   & h1 {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     max-width: 500px;
     color: var(--text-1);
-
-    & strong {
-      font-size: 2.9rem;
-      color: var(--color-2);
-    }
   }
 
   & p {
@@ -95,11 +91,7 @@
     }
 
     & h1 {
-      font-size: 2rem;
-
-      & strong {
-        font-size: 2.1rem;
-      }
+      font-size: 2.2rem;
     }
   }
 }

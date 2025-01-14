@@ -10,14 +10,14 @@
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid var(--border-color);
 
   & a,
   button {
     background-color: var(--color-4);
     color: var(--color-1);
     font-weight: bold;
-    border: 1px solid var(--light-gray);
+    border: 1px solid var(--border-color);
     border-radius: 1rem;
     padding: 0.3rem 1rem;
     cursor: pointer;

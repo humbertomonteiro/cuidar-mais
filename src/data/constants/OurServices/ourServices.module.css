@@ -7,11 +7,13 @@
   padding: 1.5rem;
   border-radius: 1rem;
   background-color: var(--color-4);
+  border: 1px solid var(--border-color);
 
   & img {
     width: 100%;
     object-fit: cover;
     border-radius: 1rem;
+    border: 1px solid var(--border-color);
   }
 }
 

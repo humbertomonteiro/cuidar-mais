@@ -9,6 +9,7 @@
     width: 25%;
     min-width: 250px;
     background: var(--color-4);
+    border: 1px solid var(--border-color);
     padding: 1rem;
     border-radius: 1rem;
     display: flex;

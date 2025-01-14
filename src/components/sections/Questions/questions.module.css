@@ -46,6 +46,7 @@
     background: var(--color-4);
     padding: 1rem;
     border-radius: 0.75rem;
+    border: 1px solid var(--border-color);
   }
 
   & li div h4 {
