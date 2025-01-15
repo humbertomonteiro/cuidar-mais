@@ -41,16 +41,14 @@ const item1 = () => {
             <span>Ingresso valor inteiro.</span>
             <strong>Valor: R$ 499,90</strong>
             <ButtonSecondary style={{ fontSize: "1rem", width: "100%" }}>
-              Ingresso Inteiro{" "}
-              <IoTicketOutline style={{ fontSize: "1.5rem" }} />
+              Garantir agora <IoTicketOutline style={{ fontSize: "1.5rem" }} />
             </ButtonSecondary>
           </div>
           <div className={styles.button}>
             <span>Ingresso para PCD, Pais atípicos ou Estudantes.</span>
             <strong>Valor: R$ 399,90</strong>
             <ButtonSecondary style={{ fontSize: "0.8rem", width: "100%" }}>
-              Ingresso com Desconto{" "}
-              <IoTicketOutline style={{ fontSize: "1.5rem" }} />
+              Garantir agora <IoTicketOutline style={{ fontSize: "1.5rem" }} />
             </ButtonSecondary>
           </div>
         </div>
