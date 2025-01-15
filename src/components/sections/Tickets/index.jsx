@@ -5,6 +5,8 @@ import Title from "../../shared/Title";
 import ButtonSecondary from "../../shared/ButtonSecondary";
 import CarouselSimple from "../../shared/CarouselSimple";
 
+import { IoTicketOutline } from "react-icons/io5";
+
 const item1 = () => {
   return (
     <div className={styles.box} data-active="true">
@@ -16,14 +18,18 @@ const item1 = () => {
       </div>
       <div className={styles.boxValue}>
         <h4>
-          <span>de</span>{" "}
+          <span>de:</span>{" "}
           <s>
-            R$ 599,90 <br />
+            R$ 839,90 <br />
           </s>{" "}
-          <span>por</span> R$ 499,90
+          <span>por:</span> R$ 499,90
         </h4>
         <ul>
           <li>Economize até 40% no valor do ingresso!</li>
+          <li>
+            Se for PCD, Pais Atípicos ou Estudante tem um desconto de R$100,00.
+            Sai por R$399,90.
+          </li>
           <li>Garanta sua vaga em um evento único com especialistas em TEA.</li>
           <li>
             Participe do networking com profissionais e familiares engajados no
@@ -32,15 +38,19 @@ const item1 = () => {
         </ul>
         <div className={styles.buttons}>
           <div className={styles.button}>
-            <span>Ingresso valor inteiro</span>
+            <span>Ingresso valor inteiro.</span>
+            <strong>Valor: R$ 499,90</strong>
             <ButtonSecondary style={{ fontSize: "1rem", width: "100%" }}>
-              Ingresso Inteiro
+              Ingresso Inteiro{" "}
+              <IoTicketOutline style={{ fontSize: "1.5rem" }} />
             </ButtonSecondary>
           </div>
           <div className={styles.button}>
-            <span>Ingresso para pessoas PCD/Pais atípicos</span>
-            <ButtonSecondary style={{ fontSize: "1rem", width: "100%" }}>
-              Ingresso Desconto
+            <span>Ingresso para PCD, Pais atípicos ou Estudantes.</span>
+            <strong>Valor: R$ 399,90</strong>
+            <ButtonSecondary style={{ fontSize: "0.8rem", width: "100%" }}>
+              Ingresso com Desconto{" "}
+              <IoTicketOutline style={{ fontSize: "1.5rem" }} />
             </ButtonSecondary>
           </div>
         </div>
@@ -64,11 +74,11 @@ const item2 = () => {
 
       <div className={styles.boxValue}>
         <h4>
-          <span>de</span>{" "}
+          <span>de:</span>{" "}
           <s>
-            R$ 699,90 <br />
+            R$ 839,90 <br />
           </s>{" "}
-          <span>por</span> R$ 599,90
+          <span>por:</span> R$ 589,90
         </h4>
         <ul>
           <li>Economize até 30% no valor do ingresso!</li>
@@ -94,11 +104,11 @@ const item3 = () => {
       </div>
       <div className={styles.boxValue}>
         <h4>
-          <span>de</span>{" "}
+          <span>de:</span>{" "}
           <s>
-            R$ 799,90 <br />
+            R$ 839,90 <br />
           </s>{" "}
-          <span>por</span> R$ 699,90
+          <span>por:</span> R$ 670,90
         </h4>
         <ul>
           <li>Economize até 20% no valor do ingresso!</li>
@@ -147,7 +157,11 @@ const Tickets = () => {
             <CarouselSimple slides={allTickets} numberSlidesView={3} />
           </div>
           <div className={styles.boxMobile}>
-            <CarouselSimple slides={allTickets} numberSlidesView={1} />
+            <CarouselSimple
+              slides={allTickets}
+              numberSlidesView={1}
+              delay={15000}
+            />
           </div>
         </div>
       </div>

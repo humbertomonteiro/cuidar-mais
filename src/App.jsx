@@ -53,13 +53,13 @@ function App() {
         <Specialty />
         <CarouselScrollInfinit />
         <Form />
+        <Tickets />
         <CarouselSimple
           slides={itemsOurSevices}
           textTitle="Nossos Serviços"
           delay={4000}
           numberSlidesView={visibleItems - 1}
         />
-        <Tickets />
         <BeSupport />
         <CarouselSimple
           slides={ItemsSponsors}

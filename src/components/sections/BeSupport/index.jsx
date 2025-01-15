@@ -16,13 +16,26 @@ const BeSupport = () => {
         <section>
           <Title text="Seja um Apoiador" align="center" />
           <p>
-            Transforme vidas e faça parte de uma causa que realmente importa!
+            O MAIOR ENCONTRO DE PROFISSIONAIS SOBRE NEURODIVERSIDADE DO MARANHÃO
           </p>
+          <div className={styles.content}>
+            <div className={styles.contentTitle}>
+              <h3>
+                EXPOSIÇÃO
+                <br /> <span>DE MÍDIA NO EVENTO</span>
+              </h3>
+            </div>
+            <ul>
+              <li>+DE 2.000 PESSOAS</li>
+              <li>+DE 30H EM CONTEÚDOS</li>
+              <li>+DE R$ 30.000 EM MÍDIAS</li>
+            </ul>
+          </div>
           <div className={styles.desktop}>
             <CarouselSimple slides={itemsBoxesSupport} numberSlidesView={3} />
           </div>
           <div className={styles.mobile}>
-            <CarouselSimple slides={itemsBoxesSupport} />
+            <CarouselSimple slides={itemsBoxesSupport} delay={10000} />
           </div>
           <div className={styles.buttons}>
             <ButtonSecondary action="link" link="#">
