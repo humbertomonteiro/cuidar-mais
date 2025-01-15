@@ -14,6 +14,7 @@
   --divider-color: #dceae9;
 
   --white: #fff;
+  --gray: #f3f3f3;
 
   --font-1: "Montserrat";
 
@@ -45,7 +46,7 @@ body {
 }
 
 .bubbles {
-  background-color: #f6f9f9;
+  background-color: var(--gray);
   position: fixed;
   top: 0;
   bottom: 0;
