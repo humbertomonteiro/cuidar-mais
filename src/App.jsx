@@ -2,11 +2,14 @@ import Header from "./components/templates/Header";
 import Main from "./components/templates/Main";
 import CarouselScrollInfinit from "./components/shared/CarouselScrollInfinit";
 import OurMission from "./components/sections/OurMission";
-import Specialty from "./components/sections/Specialty";
+import Privilege from "./components/sections/PrivilegeOfParticipating";
 import Form from "./components/sections/Form";
 import BeSupport from "./components/sections/BeSupport";
 import Questions from "./components/sections/Questions";
 import CarouselSimple from "./components/shared/CarouselSimple";
+import HalfiPrice from "./components/sections/HalfPrice";
+import Politic from "./components/sections/Politic";
+import Local from "./components/sections/Local";
 
 import { itemsOurSevices } from "./data/constants/OurServices";
 import { ItemsSponsors } from "./data/constants/Sponsors";
@@ -50,16 +53,12 @@ function App() {
           numberSlidesView={visibleItems - 1}
           textTitle="Palestrantes"
         />
-        <Specialty />
+        <Privilege />
+        <Local />
         <CarouselScrollInfinit />
         <Form />
         <Tickets />
-        <CarouselSimple
-          slides={itemsOurSevices}
-          textTitle="Nossos Serviços"
-          delay={4000}
-          numberSlidesView={visibleItems - 1}
-        />
+        <HalfiPrice />
         <BeSupport />
         <CarouselSimple
           slides={ItemsSponsors}
@@ -67,7 +66,14 @@ function App() {
           textTitle="Patrocinadores"
         />
         <Videos />
+        <CarouselSimple
+          slides={itemsOurSevices}
+          textTitle="Nossos Serviços"
+          delay={4000}
+          numberSlidesView={visibleItems - 1}
+        />
         <Questions />
+        <Politic />
       </Main>
       <Footer />
       <div className="bubbles">
