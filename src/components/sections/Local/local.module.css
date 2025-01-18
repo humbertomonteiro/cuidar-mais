@@ -12,6 +12,7 @@
 
 .boxVideo {
   width: 30%;
+  height: 100%;
 
   & video {
     width: 100%;
@@ -40,7 +41,6 @@
 .list {
   width: 40%;
   background-color: var(--color-5);
-  border: 1px solid var(--border-color);
   padding: 1rem;
 }
 

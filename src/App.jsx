@@ -28,7 +28,7 @@ function App() {
   const [visibleItems, setVisibleItems] = useState(4);
 
   useEffect(() => {
-    Aos.init({ duration: 1200 });
+    Aos.init({ duration: 1300 });
   }, []);
 
   const updateVisibleItems = () => {
