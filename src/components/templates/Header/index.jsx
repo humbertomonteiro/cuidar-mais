@@ -7,7 +7,7 @@ import { IoRocketOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <header className={styles.container}>
+    <header data-aos="fade-up" className={styles.container}>
       <div className={styles.content}>
         <img src={logo} alt="Logo Salud" />
         <h1>Terceira edição do nosso Congresso!</h1>

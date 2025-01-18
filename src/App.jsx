@@ -21,8 +21,15 @@ import TopBar from "./components/sections/TopBar";
 import Videos from "./components/sections/Videos";
 import Tickets from "./components/sections/Tickets";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   const [visibleItems, setVisibleItems] = useState(4);
+
+  useEffect(() => {
+    Aos.init({ duration: 1200 });
+  }, []);
 
   const updateVisibleItems = () => {
     if (window.innerWidth <= 768) {

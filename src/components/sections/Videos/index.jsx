@@ -6,7 +6,7 @@ const Videos = () => {
   return (
     <Section className="container-default">
       {/* <Title text="Videos" align="center" color={4} /> */}
-      <div className={styles.container}>
+      <div data-aos="zoom-in" className={styles.container}>
         <div className={styles.content}>
           <h3>Nossos vídeos</h3>
           <p>Veja o conteúdo que produzimos no youtube.</p>

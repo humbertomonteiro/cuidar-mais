@@ -12,7 +12,7 @@ const CarouselSimple = ({
 }) => {
   return (
     <Section>
-      <div className={styles.container}>
+      <div data-aos="zoom-in" className={styles.container}>
         {textTitle && <Title text={textTitle} align="center" />}
         <Swiper
           pagination={{

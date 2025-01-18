@@ -20,7 +20,7 @@ const Questions = () => {
   return (
     <Section>
       <Title text="Perguntas frequentes" align="center" />
-      <div className={styles.container}>
+      <div data-aos="zoom-in" className={styles.container}>
         <div href="#" className={styles.box}>
           <FaWhatsapp />
           <h3>Prefere falar com nosso time?</h3>

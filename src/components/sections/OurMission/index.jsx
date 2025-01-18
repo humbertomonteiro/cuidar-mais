@@ -9,7 +9,7 @@ import smartphone from "../../../assets/mocups/mocup-smartphone.png";
 const OurMission = () => {
   return (
     <Section>
-      <div className={styles.container}>
+      <div data-aos="zoom-in" className={styles.container}>
         <div className={styles.content}>
           <h2>Nossa missão</h2>
           <p>

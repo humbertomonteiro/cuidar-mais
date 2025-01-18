@@ -10,7 +10,7 @@ export default function HalfiPrice() {
     <Section>
       <Title text="Meia entrada" align="center" />
 
-      <div className={styles.container}>
+      <div data-aos="zoom-in" className={styles.container}>
         <div className={styles.img}>
           <img
             loading="lazy"

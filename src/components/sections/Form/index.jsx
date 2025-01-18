@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Form = () => {
   return (
     <Section>
-      <div className={styles.container}>
+      <div data-aos="fade-down" className={styles.container}>
         <div className={styles.img}>
           <img
             src="https://img.freepik.com/fotos-gratis/estudantes-internacionais-entusiasmados-em-trajes-casuais-prontos-para-o-trabalho-em-equipe-retrato-interior-de-feliz-garota-mulata-com-cabelo-encaracolado-de-maos-dadas-com-a-senhora-europeia-e-o-jovem-africano-no-escritorio_197531-3855.jpg?t=st=1736088929~exp=1736092529~hmac=f3682b8700aea8148d1293a574d9138866e248c96d0da21f4bbf20a52243d5a2&w=740"

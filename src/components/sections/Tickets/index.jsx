@@ -140,7 +140,7 @@ const Tickets = () => {
   return (
     <Section>
       <Title text="Ingressos Cuidar mais" align="center" />
-      <div className={styles.container}>
+      <div data-aos="zoom-in" className={styles.container}>
         <div className={styles.content}>
           <h3>Ingressos Limitados – Garanta já sua participação!</h3>
           <p>
