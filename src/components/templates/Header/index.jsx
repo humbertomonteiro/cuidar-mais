@@ -15,9 +15,8 @@ const Header = () => {
           Junte-se a especialistas, profissionais da saúde e educadores em um
           encontro dedicado à conscientização e troca de conhecimento.
         </p>
-        {/* <Button action="click">Quero participar</Button> */}
 
-        <ButtonSecondary action={"link"}>
+        <ButtonSecondary action={"link"} link="#tickets">
           Quero participar <IoRocketOutline style={{ fontSize: "1.7rem" }} />
         </ButtonSecondary>
       </div>
@@ -28,7 +27,7 @@ const Header = () => {
         />
       </div>
       <div className={styles.logos}>
-        <img src={logosTel} alt="" />
+        <img src={logosTel} alt="organizadores do projeto" />
       </div>
     </header>
   );

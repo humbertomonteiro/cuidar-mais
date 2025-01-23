@@ -10,19 +10,19 @@ const PrivilegeOfParticipating = () => {
     <Section>
       <Title text="Privilégios em participar" align="center" />
       <div className={styles.boxes}>
-        <article data-aos="fade-right">
+        <article data-aos="zoom-in">
           <PiBridge />
           <h3>Palestrantes de altíssimo padrão.</h3>
         </article>
-        <article data-aos="fade-left">
+        <article data-aos="zoom-in">
           <BiWorld />
           <h3>Especialistas Internacionais.</h3>
         </article>
-        <article data-aos="fade-right">
+        <article data-aos="zoom-in">
           <BiNetworkChart />
           <h3>Oportunidade de networking com especialistas.</h3>
         </article>
-        <article data-aos="fade-left">
+        <article data-aos="zoom-in">
           <LuNetwork />
           <h3>Extrutura de alto nível e ambiente acolhedor.</h3>
         </article>

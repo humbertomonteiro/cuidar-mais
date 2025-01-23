@@ -61,7 +61,9 @@ export default function HalfiPrice() {
             no dia do credenciamento.
           </span>
           <div className={styles.button}>
-            <strong>R$ 399,90</strong>
+            <strong>
+              <span>10X de</span>R$ 39,90
+            </strong>
             <ButtonSecondary>Garantir meia</ButtonSecondary>
           </div>
         </div>

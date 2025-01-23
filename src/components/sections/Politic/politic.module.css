@@ -17,8 +17,8 @@
     width: 100%;
     background-color: transparent;
     border: 0;
-    color: var(--text-2);
-    font-size: 3rem;
+    color: var(--text-1);
+    font-size: 2rem;
     cursor: pointer;
     padding: 0;
   }

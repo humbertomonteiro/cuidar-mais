@@ -12,7 +12,7 @@ import Politic from "./components/sections/Politic";
 import Local from "./components/sections/Local";
 
 import { itemsOurSevices } from "./data/constants/OurServices";
-import { ItemsSponsors } from "./data/constants/Sponsors";
+// import { ItemsSponsors } from "./data/constants/Sponsors";
 import { itemsSpeakers } from "./data/constants/Speakers";
 
 import { useState, useEffect } from "react";
@@ -28,7 +28,7 @@ function App() {
   const [visibleItems, setVisibleItems] = useState(4);
 
   useEffect(() => {
-    Aos.init({ duration: 1300 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   const updateVisibleItems = () => {
@@ -51,6 +51,7 @@ function App() {
         text={"Quer participar do próximo congresso?"}
         action={"link"}
         textAction={"Clique aqui !"}
+        linkAction={"#tickets"}
       />
       <Header />
       <Main>
@@ -67,11 +68,11 @@ function App() {
         <Tickets />
         <HalfiPrice />
         <BeSupport />
-        <CarouselSimple
+        {/* <CarouselSimple
           slides={ItemsSponsors}
           numberSlidesView={visibleItems}
           textTitle="Patrocinadores"
-        />
+        /> */}
         <Videos />
         <CarouselSimple
           slides={itemsOurSevices}

@@ -22,7 +22,11 @@ const OurMission = () => {
 
           <img src={logosTel} alt="logo congresso" />
 
-          <ButtonSecondary action="link" link="#">
+          <ButtonSecondary
+            action="link"
+            link="https://www.instagram.com/saludcuidarmais/"
+            target="_blank"
+          >
             Nos acompanhe <FaInstagram style={{ fontSize: "1.5rem" }} />
           </ButtonSecondary>
         </div>

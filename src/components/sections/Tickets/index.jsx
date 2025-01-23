@@ -9,7 +9,7 @@ import { IoTicketOutline } from "react-icons/io5";
 
 const item1 = () => {
   return (
-    <div className={styles.box} data-active="true">
+    <div id="tickets" className={styles.box} data-active="true">
       <div className={styles.boxContent}>
         <span>Ingresso</span>
         <h4>Pré-venda</h4>
@@ -22,13 +22,13 @@ const item1 = () => {
           <s>
             R$ 839,90 <br />
           </s>{" "}
-          <span>por:</span> R$ 499,90
+          <span>por:</span> <strong>10X de </strong>R$ 49,90
         </h4>
         <ul>
           <li>Economize até 40% no valor do ingresso!</li>
           <li>
             Se for PCD, Pais Atípicos ou Estudante tem um desconto de R$100,00.
-            Sai por R$399,90.
+            Sai por 10x de R$39,90.
           </li>
           <li>Garanta sua vaga em um evento único com especialistas em TEA.</li>
           <li>
@@ -76,7 +76,7 @@ const item2 = () => {
           <s>
             R$ 839,90 <br />
           </s>{" "}
-          <span>por:</span> R$ 589,90
+          <span>por:</span> <strong>10X de </strong>R$ 58,90
         </h4>
         <ul>
           <li>Economize até 30% no valor do ingresso!</li>
@@ -106,7 +106,7 @@ const item3 = () => {
           <s>
             R$ 839,90 <br />
           </s>{" "}
-          <span>por:</span> R$ 670,90
+          <span>por:</span> <strong>10X de </strong>R$ 67,90
         </h4>
         <ul>
           <li>Economize até 20% no valor do ingresso!</li>

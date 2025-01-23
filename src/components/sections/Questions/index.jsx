@@ -15,17 +15,21 @@ const Questions = () => {
   const [item4, setItem4] = useState(false);
   const [item5, setItem5] = useState(false);
   const [item6, setItem6] = useState(false);
-  const [item7, setItem7] = useState(false);
-  const [item8, setItem8] = useState(false);
+  // const [item7, setItem7] = useState(false);
+  // const [item8, setItem8] = useState(false);
   return (
     <Section>
       <Title text="Perguntas frequentes" align="center" />
       <div data-aos="zoom-in" className={styles.container}>
-        <div href="#" className={styles.box}>
+        <div className={styles.box}>
           <FaWhatsapp />
           <h3>Prefere falar com nosso time?</h3>
           <p>Fale com nosso time de suporte pelo Whatsapp</p>
-          <ButtonSecondary>
+          <ButtonSecondary
+            action="link"
+            link="https://wa.me/5598988830200"
+            target="_blank"
+          >
             Clique aqui <FaArrowRight />
           </ButtonSecondary>
         </div>
@@ -33,16 +37,16 @@ const Questions = () => {
           <li>
             <div>
               <h4 onClick={() => setItem1(!item1)}>
-                Meia entrada {item1 ? <TiArrowUp /> : <TiArrowDown />}
+                Para quem é o Congresso Cuidar +?{" "}
+                {item1 ? <TiArrowUp /> : <TiArrowDown />}
               </h4>
               {item1 && (
                 <div>
                   <p>
-                    Para obter meia-entrada, é necessário apresentar a Carteira
-                    de Identificação Estudantil (CIE) ou documento equivalente.
-                    Também são elegíveis pessoas com deficiência e seus
-                    acompanhantes, famílias atípicas, idosos, jovens de baixa
-                    renda e educadores, mediante documentação comprobatória
+                    Para todos que sonham em mergulhar no mundo TEA. Para pais
+                    atípicos, familiares, médicos, educadores, psicólogos,
+                    terapeutas, profissionais da saúde e todos que desejam
+                    enriquecer no âmbito profissional.
                   </p>
                 </div>
               )}
@@ -51,7 +55,8 @@ const Questions = () => {
           <li>
             <div>
               <h4 onClick={() => setItem2(!item2)}>
-                Meia entrada <TiArrowDown />
+                Como faço para adquirir meia entrada?{" "}
+                {item2 ? <TiArrowUp /> : <TiArrowDown />}
               </h4>
               {item2 && (
                 <div>
@@ -69,17 +74,29 @@ const Questions = () => {
           <li>
             <div>
               <h4 onClick={() => setItem3(!item3)}>
-                Meia entrada <TiArrowDown />
+                Quais são os benefícios de participar do congresso?{" "}
+                {item3 ? <TiArrowUp /> : <TiArrowDown />}
               </h4>
               {item3 && (
                 <div>
-                  <p>
-                    Para obter meia-entrada, é necessário apresentar a Carteira
-                    de Identificação Estudantil (CIE) ou documento equivalente.
-                    Também são elegíveis pessoas com deficiência e seus
-                    acompanhantes, famílias atípicas, idosos, jovens de baixa
-                    renda e educadores, mediante documentação comprobatória
-                  </p>
+                  <ul>
+                    <li>1 Grande palco.</li>
+                    <li>Grandes palestrantes inusitados.</li>
+                    <li>Dois dias de muita imersão</li>
+                    <li>Mais tempo de ricas palestras.</li>
+                    <li>Acesso a palestrantes renomados e inusitados.</li>
+                    <li>Certificado de 30 horas.</li>
+                    <li>Acesso ao conteúdo gravado por 24 meses.</li>
+                    <li>
+                      Networking com uma comunidade global de profissionais da
+                      saúde.
+                    </li>
+                    <li>Expositores com as últimas inovações em saúde.</li>
+                    <li>
+                      Impacto social com parte dos rendimentos apoiando
+                      iniciativas sociais.
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
@@ -87,16 +104,15 @@ const Questions = () => {
           <li>
             <div>
               <h4 onClick={() => setItem4(!item4)}>
-                Meia entrada <TiArrowDown />
+                Como entrar em contato com o Congresso Cuidar +?{" "}
+                {item4 ? <TiArrowUp /> : <TiArrowDown />}
               </h4>
               {item4 && (
                 <div>
                   <p>
-                    Para obter meia-entrada, é necessário apresentar a Carteira
-                    de Identificação Estudantil (CIE) ou documento equivalente.
-                    Também são elegíveis pessoas com deficiência e seus
-                    acompanhantes, famílias atípicas, idosos, jovens de baixa
-                    renda e educadores, mediante documentação comprobatória
+                    Você pode entrar em contato com a equipe através do e-mail
+                    disponibilizado na página de vendas
+                    saludcuidarmais@gmail.com ou via Instagram @saludcuidarmais
                   </p>
                 </div>
               )}
@@ -105,16 +121,17 @@ const Questions = () => {
           <li>
             <div>
               <h4 onClick={() => setItem5(!item5)}>
-                Meia entrada <TiArrowDown />
+                Como funciona a política de cancelamento e reembolso?{" "}
+                {item5 ? <TiArrowUp /> : <TiArrowDown />}
               </h4>
               {item5 && (
                 <div>
                   <p>
-                    Para obter meia-entrada, é necessário apresentar a Carteira
-                    de Identificação Estudantil (CIE) ou documento equivalente.
-                    Também são elegíveis pessoas com deficiência e seus
-                    acompanhantes, famílias atípicas, idosos, jovens de baixa
-                    renda e educadores, mediante documentação comprobatória
+                    Respeitamos o Código de Defesa do Consumidor, permitindo
+                    cancelamentos e reembolsos em até 7 dias após a compra. Após
+                    este período, não oferecemos cancelamentos, transferencias
+                    de titularidade ou reembolsos devido aos compromissos já
+                    estabelecidos.
                   </p>
                 </div>
               )}
@@ -123,22 +140,22 @@ const Questions = () => {
           <li>
             <div>
               <h4 onClick={() => setItem6(!item6)}>
-                Meia entrada <TiArrowDown />
+                Como será o asseco ao conteúdo online?{" "}
+                {item6 ? <TiArrowUp /> : <TiArrowDown />}
               </h4>
               {item6 && (
                 <div>
                   <p>
-                    Para obter meia-entrada, é necessário apresentar a Carteira
-                    de Identificação Estudantil (CIE) ou documento equivalente.
-                    Também são elegíveis pessoas com deficiência e seus
-                    acompanhantes, famílias atípicas, idosos, jovens de baixa
-                    renda e educadores, mediante documentação comprobatória
+                    O conteúdo será gravado e editado e disponibilizado na
+                    plataforma Hotmart para que o aluno possa usufruir a vontade
+                    durante 24 meses. Permitindo que você assista quando e onde
+                    desejar.
                   </p>
                 </div>
               )}
             </div>
           </li>
-          <li>
+          {/* <li>
             <div>
               <h4 onClick={() => setItem7(!item7)}>
                 Meia entrada <TiArrowDown />
@@ -173,7 +190,7 @@ const Questions = () => {
                 </div>
               )}
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
     </Section>

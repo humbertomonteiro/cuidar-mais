@@ -22,7 +22,7 @@
     }
 
     & strong {
-      color: var(--text-2);
+      color: var(--text-1);
     }
   }
 
@@ -98,6 +98,10 @@
             font-size: 1rem;
             color: #c4c4c4;
             font-weight: 500;
+          }
+
+          & strong {
+            font-size: 1rem;
           }
         }
 

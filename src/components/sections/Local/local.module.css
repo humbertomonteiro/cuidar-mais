@@ -11,22 +11,27 @@
 }
 
 .boxVideo {
-  width: 30%;
-  height: 100%;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-5);
+  padding: 1rem;
 
   & video {
-    width: 100%;
+    width: 60%;
     height: 100%;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
   }
 }
 
 .boxLocal {
-  width: 70%;
+  width: 66.6%;
   display: flex;
 }
 
 .map {
-  width: 60%;
+  width: 50%;
   height: 100%;
 }
 
@@ -39,7 +44,7 @@
 }
 
 .list {
-  width: 40%;
+  width: 50%;
   background-color: var(--color-5);
   padding: 1rem;
 }

@@ -1,7 +1,7 @@
 import styles from "./carouselScrollInfinit.module.css";
 import Section from "../Section";
 
-const imagesnLogos = [
+export const imagesnLogos = [
   {
     img: "https://i.pinimg.com/736x/1c/2a/fd/1c2afd5df5bc136bfbae9ce51386cd5f.jpg",
   },
@@ -26,23 +26,29 @@ const CarouselScrollInfinit = () => {
         <div className={styles.group}>
           {imagesnLogos.map((item, index) => (
             <div key={index} className={styles.card}>
-              <img
+              <div className={styles.noContent}>
+                <h5>Sua logo aqui!</h5>
+              </div>
+              {/* <img
                 className={styles.img}
                 src={item.img}
                 alt={`Imagem logo: ${index}`}
-              />
+              /> */}
             </div>
           ))}
         </div>
         <div arial-hidden="true" className={styles.group}>
           {imagesnLogos.map((item, index) => (
             <div key={index} className={styles.card}>
-              <img
+              <div className={styles.noContent}>
+                <h5>Sua logo aqui!</h5>
+              </div>
+              {/* <img
                 loading="lazy"
                 className={styles.img}
                 src={item.img}
                 alt={`Imagem logo: ${index}`}
-              />
+              /> */}
             </div>
           ))}
         </div>

@@ -23,7 +23,7 @@
   }
 
   & h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     max-width: 80%;
     margin-bottom: 0.5rem;
     color: var(--text-1);
@@ -42,15 +42,15 @@
   gap: 1rem;
   margin-bottom: 1rem;
 
-  & li {
+  & > li {
     background: var(--color-4);
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     border-radius: 0.75rem;
     border: 1px solid var(--border-color);
   }
 
   & li div h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--text-1);
     display: flex;
     justify-content: space-between;
@@ -70,6 +70,14 @@
   & li div div p {
     color: var(--text-2);
     line-height: 150%;
+    font-size: 0.9rem;
+  }
+
+  & li div div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 1.5rem;
   }
 }
 

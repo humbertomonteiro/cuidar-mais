@@ -36,7 +36,7 @@
       gap: 0.5rem;
     }
 
-    & span {
+    & > span {
       display: block;
       margin-bottom: 1rem;
       font-size: 0.8rem;
@@ -52,10 +52,17 @@
     grid-column-end: span 2;
 
     & strong {
-      display: block;
       font-size: 2rem;
       margin-top: 0.5rem;
       color: var(--text-1);
+      display: flex;
+      gap: 0.5rem;
+
+      & span {
+        font-size: 1rem;
+        align-self: self-end;
+        margin-bottom: 0.3rem;
+      }
     }
   }
 }

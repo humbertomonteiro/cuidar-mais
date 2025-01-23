@@ -15,7 +15,7 @@
 }
 
 .card {
-  width: 250px;
+  width: 230px;
   border-radius: 24px;
   /* padding: 20px; */
   font-size: xx-large;
@@ -37,6 +37,19 @@
   animation: scrolling 15s linear infinite;
 }
 
+.noContent {
+  background-color: var(--color-4);
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  color: var(--text-1);
+
+  text-align: center;
+}
+
 @keyframes scrolling {
   0% {
     transform: translateX(0);
@@ -54,5 +67,9 @@
 
   .group {
     gap: 10px;
+  }
+
+  .noContent {
+    height: 180px;
   }
 }

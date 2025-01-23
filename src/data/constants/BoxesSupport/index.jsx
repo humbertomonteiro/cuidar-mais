@@ -3,8 +3,8 @@ import styles from "./boxesSupport.module.css";
 const Item1 = () => {
   return (
     <div className={styles.box}>
-      <h3 style={{ background: "#f3c98d" }}>Ouro</h3>
-      <ul style={{ background: "#f3c98d" }}>
+      <h3 style={{ background: "#ffd26a" }}>Ouro</h3>
+      <ul style={{ background: "#ffd26a" }}>
         <li>Stand;</li>
         <li>Logo no outdoor;</li>
         <li>Postagens dedicadas nas mídias sociais do evento;</li>
@@ -33,8 +33,8 @@ const Item1 = () => {
 const Item2 = () => {
   return (
     <div className={styles.box}>
-      <h3 style={{ background: "#1cb4a8", color: "#fff" }}>Prata</h3>
-      <ul style={{ background: "#1cb4a8", color: "#fff" }}>
+      <h3 style={{ background: "#00ba9f", color: "#fff" }}>Prata</h3>
+      <ul style={{ background: "#00ba9f", color: "#fff" }}>
         <li>Postagens dedicadas nas mídias sociais do evento;</li>
         <li>Logo em destaque nos materiais de divulgação;</li>
 
