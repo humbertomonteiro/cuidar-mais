@@ -41,15 +41,20 @@
       margin-bottom: 1rem;
       font-size: 0.8rem;
     }
+
+    & > strong {
+      color: var(--text-1);
+    }
   }
 
   & .button {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 1rem;
     width: 100%;
     grid-column-end: span 2;
+    margin-top: 1rem;
 
     & strong {
       font-size: 2rem;

@@ -9,7 +9,8 @@ import { IoTicketOutline } from "react-icons/io5";
 
 const item1 = () => {
   return (
-    <div id="tickets" className={styles.box} data-active="true">
+    <div className={styles.box} data-active="true">
+      <strong className={styles.sale}>40% OFF</strong>
       <div className={styles.boxContent}>
         <span>Ingresso</span>
         <h4>Pré-venda</h4>
@@ -25,11 +26,8 @@ const item1 = () => {
           <span>por:</span> <strong>10X de </strong>R$ 49,90
         </h4>
         <ul>
-          <li>Economize até 40% no valor do ingresso!</li>
-          <li>
-            Se for PCD, Pais Atípicos ou Estudante tem um desconto de R$100,00.
-            Sai por 10x de R$39,90.
-          </li>
+          <li>Garanta o seu ingresso com o menor valor!</li>
+          <li>Economize mais 40% no valor do ingresso!</li>
           <li>Garanta sua vaga em um evento único com especialistas em TEA.</li>
           <li>
             Participe do networking com profissionais e familiares engajados no
@@ -39,22 +37,32 @@ const item1 = () => {
         <div className={styles.buttons}>
           <div className={styles.button}>
             <span>Ingresso valor inteiro.</span>
-            <strong>Valor: R$ 499,90</strong>
-            <ButtonSecondary style={{ width: "100%" }}>
+            <ButtonSecondary
+              style={{ width: "100%" }}
+              target="_blank"
+              action="link"
+              link=" https://payment-link-v3.stone.com.br/pl_pGe8PoXDNZdY7v1hrxio0BVkq5j1zyOa"
+            >
               Garantir agora <IoTicketOutline style={{ fontSize: "1.5rem" }} />
             </ButtonSecondary>
           </div>
           <div className={styles.button}>
-            <span>Ingresso para PCD, Pais atípicos ou Estudantes.</span>
-            <strong>Valor: R$ 399,90</strong>
-            <ButtonSecondary style={{ width: "100%" }}>
+            <span>Ingresso em grupo. (No minimo 5 ingressos)</span>
+            <div>
+              <strong>10X de R$ 44,90</strong>
+              <span>por unidade</span>
+            </div>
+            <ButtonSecondary
+              style={{ width: "100%" }}
+              target="_blank"
+              action="link"
+              link="https://payment-link-v3.stone.com.br/pl_7w49XknVBeRjWYRDIgTml6YZyNMPxmL8"
+            >
               Garantir agora <IoTicketOutline style={{ fontSize: "1.5rem" }} />
             </ButtonSecondary>
           </div>
         </div>
-        {/* <strong>
-                ⏳ Corra! Os ingressos da pré-venda estão acabando!
-              </strong> */}
+        <a href="#half-price">Garanta sua meia entrada clicando aqui</a>
       </div>
     </div>
   );
@@ -63,6 +71,7 @@ const item1 = () => {
 const item2 = () => {
   return (
     <div className={styles.box}>
+      <strong className={styles.sale}>30% OFF</strong>
       <div className={styles.boxContent}>
         <span>Ingresso</span>
         <h4>Lote 1</h4>
@@ -94,6 +103,7 @@ const item2 = () => {
 const item3 = () => {
   return (
     <div className={styles.box}>
+      <strong className={styles.sale}>20% OFF</strong>
       <div className={styles.boxContent}>
         <span>Ingresso</span>
         <h4>Lote 2</h4>
@@ -140,7 +150,7 @@ const Tickets = () => {
   return (
     <Section>
       <Title text="Ingressos Cuidar mais" align="center" />
-      <div data-aos="zoom-in" className={styles.container}>
+      <div id="tickets" data-aos="zoom-in" className={styles.container}>
         <div className={styles.content}>
           <h3>Ingressos Limitados – Garanta já sua participação!</h3>
           <p>

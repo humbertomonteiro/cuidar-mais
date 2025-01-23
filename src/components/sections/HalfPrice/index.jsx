@@ -10,7 +10,7 @@ export default function HalfiPrice() {
     <Section>
       <Title text="Meia entrada" align="center" />
 
-      <div data-aos="zoom-in" className={styles.container}>
+      <div id="half-price" data-aos="zoom-in" className={styles.container}>
         <div className={styles.img}>
           <img
             loading="lazy"
@@ -46,12 +46,12 @@ export default function HalfiPrice() {
             </li>
           </ul>
 
-          <span>
+          {/* <span>
             🔖 Para obter o benefício da meia entrada, utilize o{" "}
             <mark>CUPOM: MEIAENTRADA</mark> (tudo em maiúsculo, sem espaços) no
             momento da compra. Este cupom não é acumulativo com outros descontos
             ou promoções.
-          </span>
+          </span> */}
 
           <span>
             Lembre-se: os documentos comprobatórios devem ser apresentados na
@@ -60,11 +60,18 @@ export default function HalfiPrice() {
             documentos é necessário. Caso contrario. Teremos a opção de upgrade
             no dia do credenciamento.
           </span>
+          <strong>Ingresso Pré-venda meia entrada</strong>
           <div className={styles.button}>
             <strong>
               <span>10X de</span>R$ 39,90
             </strong>
-            <ButtonSecondary>Garantir meia</ButtonSecondary>
+            <ButtonSecondary
+              action="link"
+              link="https://payment-link-v3.stone.com.br/pl_7w49XknVBeRjWYRDIgTml6YZyNMPxmL8"
+              target="_blank"
+            >
+              Garantir meia
+            </ButtonSecondary>
           </div>
         </div>
       </div>

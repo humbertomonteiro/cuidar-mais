@@ -37,7 +37,12 @@ const BeSupport = () => {
           <CarouselSimple slides={itemsBoxesSupport} delay={10000} />
         </div>
         <div className={styles.buttons}>
-          <ButtonSecondary action="link" link="#">
+          <ButtonSecondary
+            target="_blank"
+            action="link"
+            link="https://wa.me/5598988830200?text=Olá,%20estou%20interessado%20em%20ser%20patrocinador%20do%20congresso%20TEA%20e%20gostaria%20de%20mais%20informações%20sobre%20as%20oportunidades%20disponíveis.
+"
+          >
             Quero ser Apoiador <FaArrowRight />
           </ButtonSecondary>
           <ButtonSecondary

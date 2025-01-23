@@ -15,7 +15,7 @@ const Questions = () => {
   const [item4, setItem4] = useState(false);
   const [item5, setItem5] = useState(false);
   const [item6, setItem6] = useState(false);
-  // const [item7, setItem7] = useState(false);
+  const [item7, setItem7] = useState(false);
   // const [item8, setItem8] = useState(false);
   return (
     <Section>
@@ -155,25 +155,31 @@ const Questions = () => {
               )}
             </div>
           </li>
-          {/* <li>
+          <li>
             <div>
               <h4 onClick={() => setItem7(!item7)}>
-                Meia entrada <TiArrowDown />
+                Tive um problema com o pagamento. O que devo fazer?{" "}
+                <TiArrowDown />
               </h4>
               {item7 && (
                 <div>
                   <p>
-                    Para obter meia-entrada, é necessário apresentar a Carteira
-                    de Identificação Estudantil (CIE) ou documento equivalente.
-                    Também são elegíveis pessoas com deficiência e seus
-                    acompanhantes, famílias atípicas, idosos, jovens de baixa
-                    renda e educadores, mediante documentação comprobatória
+                    Sentimos muito pelo transtorno! Por favor, entre em contato
+                    conosco pelo WhatsApp para que possamos resolver o problema
+                    o mais rápido possível.{" "}
+                    <a
+                      href="https://wa.me/5598988830200?text=Olá,%20tive%20um%20problema%20com%20o%20pagamento%20do%20congresso%20TEA%20e%20gostaria%20de%20ajuda.
+"
+                    >
+                      Clique aqui
+                    </a>
+                    . Nossa equipe está pronta para ajudar!
                   </p>
                 </div>
               )}
             </div>
           </li>
-          <li>
+          {/* <li>
             <div>
               <h4 onClick={() => setItem8(!item8)}>
                 Meia entrada <TiArrowDown />
