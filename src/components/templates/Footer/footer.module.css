@@ -4,4 +4,8 @@
   background-color: var(--color-4);
   border-top: 1px solid var(--border-color);
   color: var(--text-1);
+
+  & .create {
+    font-size: 0.7rem;
+  }
 }

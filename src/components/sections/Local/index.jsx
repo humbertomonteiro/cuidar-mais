@@ -18,6 +18,7 @@ const Local = () => {
           <div className={styles.boxLocal}>
             <div className={styles.list}>
               <h3>Centro de Convenções Multicenter</h3>
+              <h4>AUDITÓRIO DARCY RIBEIRO</h4>
               <ul>
                 <li>Com 1 grande palco na Expo</li>
                 <li>⁠Stands na área secundária</li>

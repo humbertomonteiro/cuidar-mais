@@ -37,7 +37,7 @@ const Questions = () => {
           <li>
             <div>
               <h4 onClick={() => setItem1(!item1)}>
-                Para quem é o Congresso Cuidar +?{" "}
+                Para quem é o Congresso?{" "}
                 {item1 ? <TiArrowUp /> : <TiArrowDown />}
               </h4>
               {item1 && (
@@ -104,7 +104,7 @@ const Questions = () => {
           <li>
             <div>
               <h4 onClick={() => setItem4(!item4)}>
-                Como entrar em contato com o Congresso Cuidar +?{" "}
+                Como entrar em contato com o Congresso?{" "}
                 {item4 ? <TiArrowUp /> : <TiArrowDown />}
               </h4>
               {item4 && (

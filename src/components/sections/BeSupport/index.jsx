@@ -4,7 +4,7 @@ import Title from "../../shared/Title";
 import Section from "../../shared/Section";
 import styles from "./beSupport.module.css";
 import { itemsBoxesSupport } from "../../../data/constants/BoxesSupport";
-import document from "../../../data/documents/congresso-autismo.pdf";
+import document from "../../../data/documents/congresso-autismo-support.pdf";
 import { FaRegFilePdf } from "react-icons/fa6";
 
 import { FaArrowRight } from "react-icons/fa";

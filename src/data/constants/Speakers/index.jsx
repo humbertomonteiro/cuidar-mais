@@ -46,9 +46,9 @@ const speakersImages = [
   },
   {
     url: jessicaAmorim,
-    name: "Jessica Amorim",
+    name: "Coralina Matos",
     experience:
-      "Pós-graduada: Terapia ocupacioanal pediátrica, Desenvolvimento infantil, Intervenção precoce baseada no modele Denver, etc...",
+      "specialista em Desenvolvimento infantil, Análise de Comportamento Aplicada, Intervenção Precoce no Autismo, 15 anos de atuação clínica como Terapeuta Ocupacional.",
   },
   {
     url: "https://ugc.production.linktr.ee/25e937f6-bbf3-4564-98a8-b591797e86e2_WhatsApp-Image-2024-10-16-at-14.29.25.jpeg?io=true&size=avatar-v3_0",
@@ -72,6 +72,12 @@ const speakersImages = [
     url: "https://ugc.production.linktr.ee/20dbbceb-7e14-46ef-addd-2228a0e51f10_IMG-1315.jpeg?io=true&size=avatar-v3_0",
     name: "Dra. Patrícia Junqueira",
     experience: "Fonoaudióloga e Doutora em Distúrbios da Comunicação Humana.",
+  },
+  {
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUF5k2AkEWI79cAz11e1q0-LaichfdcnOKwg&s",
+    name: "Dr. Thiago Gusmão",
+    experience:
+      "Neurologista Exemplar: Formado com especialização pela UFF, Dr. Thiago é um especialista comprometido com a neurologia de crianças e adolescentes.",
   },
   // { url: drJoaoArnoud, name: "Dr. João Arnoud", theme: "TEA" },
   // { url: drMarconeOliveira, name: "Dr. Marcone Oliveira", theme: "TEA" },

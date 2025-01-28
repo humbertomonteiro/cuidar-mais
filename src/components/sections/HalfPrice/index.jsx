@@ -67,10 +67,10 @@ export default function HalfiPrice() {
             </strong>
             <ButtonSecondary
               action="link"
-              link="https://payment-link-v3.stone.com.br/pl_7w49XknVBeRjWYRDIgTml6YZyNMPxmL8"
+              link="https://cielolink.com.br/40yi0G0"
               target="_blank"
             >
-              Garantir meia
+              Garantir meia entrada
             </ButtonSecondary>
           </div>
         </div>

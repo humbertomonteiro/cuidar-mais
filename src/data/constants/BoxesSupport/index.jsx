@@ -26,7 +26,7 @@ const Item1 = () => {
           congresso;
         </li>
       </ul>
-      <strong>R$ 12.000,00</strong>
+      <strong>R$ 15.000,00</strong>
     </div>
   );
 };
@@ -51,7 +51,7 @@ const Item2 = () => {
           congresso;
         </li>
       </ul>
-      <strong>R$ 5.000,00</strong>
+      <strong>R$ 10.000,00</strong>
     </div>
   );
 };
@@ -64,7 +64,7 @@ const Item3 = () => {
 
         <li>Logo no vídeo institucional;</li>
       </ul>
-      <strong>R$ 2.500,00</strong>
+      <strong>R$ 5.000,00</strong>
     </div>
   );
 };

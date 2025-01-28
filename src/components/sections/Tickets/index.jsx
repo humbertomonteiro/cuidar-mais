@@ -41,13 +41,18 @@ const item1 = () => {
               style={{ width: "100%" }}
               target="_blank"
               action="link"
-              link=" https://payment-link-v3.stone.com.br/pl_pGe8PoXDNZdY7v1hrxio0BVkq5j1zyOa"
+              link="https://cielolink.com.br/3EhFl7C"
             >
-              Garantir agora <IoTicketOutline style={{ fontSize: "1.5rem" }} />
+              Ingresso inteiro{" "}
+              <IoTicketOutline style={{ fontSize: "1.2rem" }} />
             </ButtonSecondary>
           </div>
           <div className={styles.button}>
-            <span>Ingresso em grupo. (No minimo 5 ingressos)</span>
+            <span>
+              Venha em grupo e garanta um desconto de R$50 por pessoa. Você tem
+              que adiquire no minimo 5 ingressos para garantir o desconto.
+              (Desconto mínimo de R$ 250,00)
+            </span>
             <div>
               <strong>10X de R$ 44,90</strong>
               <span>por unidade</span>
@@ -56,9 +61,9 @@ const item1 = () => {
               style={{ width: "100%" }}
               target="_blank"
               action="link"
-              link="https://payment-link-v3.stone.com.br/pl_7w49XknVBeRjWYRDIgTml6YZyNMPxmL8"
+              link="https://cielolink.com.br/3EbCCw9"
             >
-              Garantir agora <IoTicketOutline style={{ fontSize: "1.5rem" }} />
+              Comprar grupo <IoTicketOutline style={{ fontSize: "1.2rem" }} />
             </ButtonSecondary>
           </div>
         </div>

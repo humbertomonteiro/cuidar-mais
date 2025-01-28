@@ -12,7 +12,7 @@ const PrivilegeOfParticipating = () => {
       <div className={styles.boxes}>
         <article data-aos="zoom-in">
           <PiBridge />
-          <h3>Palestrantes de altíssimo padrão.</h3>
+          <h3>Palestrantes renomados na área.</h3>
         </article>
         <article data-aos="zoom-in">
           <BiWorld />
