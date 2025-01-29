@@ -98,7 +98,7 @@ const speakersImages = [
   // { url: profLucelmoLacerda, name: "Prof. Dr. Lucelmo Lacerda", theme: "TEA" },
 ];
 
-import imgDeco from "../../../assets/logos/logo-colorful.png";
+import imgDeco from "../../../assets/bg/bg-bootm1.jpg";
 
 export const itemsSpeakers = speakersImages.map((item, index) => ({
   id: index + 1,
@@ -110,7 +110,7 @@ export const itemsSpeakers = speakersImages.map((item, index) => ({
         src={item.url}
         alt={`Palestrante ${index + 1}`}
       />
-      <div className={styles}>
+      <div className={styles.content}>
         <h3>{item.name}</h3>
         {/* <strong>Tema: </strong> */}
         <span>{item.experience}</span>

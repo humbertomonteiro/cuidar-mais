@@ -7,7 +7,7 @@ const Politic = () => {
   const [showText, setShowText] = useState(false);
   return (
     <div className={styles.container}>
-      <h2>POLÍTICA CONGRESSO CUIDAR +</h2>
+      <h2>POLÍTICA CONGRESSO</h2>
       <div className={styles.content}>
         <button
           className={styles.button}

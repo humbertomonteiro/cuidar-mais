@@ -1,5 +1,5 @@
 import styles from "./header.module.css";
-import logo from "../../../assets/logos/logo-congresso.png";
+import logo from "../../../assets/logos/logo.png";
 // import Button from "../../shared/Button";
 import ButtonSecondary from "../../shared/ButtonSecondary";
 import logosTel from "../../../assets/logos/logos-telefone.png";
@@ -20,12 +20,12 @@ const Header = () => {
           Quero participar <IoRocketOutline style={{ fontSize: "1.7rem" }} />
         </ButtonSecondary>
       </div>
-      <div className={styles.img}>
+      {/* <div className={styles.img}>
         <img
           src="https://img.freepik.com/fotos-gratis/pessoas-que-participam-de-um-evento-de-alto-protocolo_23-2150951407.jpg?t=st=1735935325~exp=1735938925~hmac=64b26d1bedd51fe9e8f7c45f9dd2ed60174888845f95ed0758c7bc09408c13f6&w=900"
           alt="Palestra"
         />
-      </div>
+      </div> */}
       <div className={styles.logos}>
         <img src={logosTel} alt="organizadores do projeto" />
       </div>

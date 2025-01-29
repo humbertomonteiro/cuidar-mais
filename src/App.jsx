@@ -24,6 +24,9 @@ import Tickets from "./components/sections/Tickets";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+import bgTop from "./assets/bg/bg-top1.jpg";
+import bgBottom from "./assets/bg/bg-bootm1.jpg";
+
 function App() {
   const [visibleItems, setVisibleItems] = useState(4);
 
@@ -85,12 +88,14 @@ function App() {
       </Main>
       <Footer />
       <div className="bubbles">
+        <img className="bg-top" src={bgTop} alt="Background Top" />
         <div className="cube"></div>
         <div className="cube"></div>
         <div className="cube"></div>
         <div className="cube"></div>
         <div className="cube"></div>
         <div className="cube"></div>
+        <img className="bg-bottom" src={bgBottom} alt="Background Bottom" />
       </div>
     </>
   );

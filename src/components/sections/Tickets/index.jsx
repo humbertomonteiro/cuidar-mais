@@ -7,7 +7,12 @@ import CarouselSimple from "../../shared/CarouselSimple";
 
 import { IoTicketOutline } from "react-icons/io5";
 
+import { useState } from "react";
+
 const item1 = () => {
+  const formBuy = () => {
+    console.log("clicou");
+  };
   return (
     <div className={styles.box} data-active="true">
       <strong className={styles.sale}>40% OFF</strong>
@@ -40,8 +45,9 @@ const item1 = () => {
             <ButtonSecondary
               style={{ width: "100%" }}
               target="_blank"
-              action="link"
+              action="button"
               link="https://cielolink.com.br/3EhFl7C"
+              onClick={formBuy}
             >
               Ingresso inteiro{" "}
               <IoTicketOutline style={{ fontSize: "1.2rem" }} />
@@ -152,6 +158,7 @@ const allTickets = [
 ];
 
 const Tickets = () => {
+  const [formGetData, setFormGetData] = useState(true);
   return (
     <Section>
       <Title text="Ingressos Cuidar mais" align="center" />
@@ -177,6 +184,20 @@ const Tickets = () => {
             />
           </div>
         </div>
+        {/* {formGetData && (
+          <form className={styles.formGetData}>
+            <label>
+              <mark>
+                Informe seu nome complete para gerarmos seu certificado:
+              </mark>
+              <input type="text" required />
+            </label>
+            <label>
+              Informe seu melhor email para enviarmos seu certificado:
+              <input type="email" required />
+            </label>
+          </form>
+        )} */}
       </div>
     </Section>
   );
