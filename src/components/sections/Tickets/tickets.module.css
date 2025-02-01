@@ -29,18 +29,24 @@
   }
 
   .boxes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
     /* display: flex;
     justify-content: center;
     overflow-y: hidden;
     overflow-x: auto; */
 
-    & .boxDesktop {
-      display: block;
-    }
+    /* & .boxDesktop {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+    } */
 
-    & .boxMobile {
+    /* & .boxMobile {
       display: none;
-    }
+    } */
 
     & .box {
       display: flex;
@@ -49,7 +55,6 @@
       width: 1000px;
       max-width: 100%;
       position: relative;
-      padding-bottom: 1rem;
       opacity: 0.4;
       user-select: none;
 
@@ -175,16 +180,10 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .container {
     & .boxes {
-      & .boxDesktop {
-        display: none;
-      }
-
-      & .boxMobile {
-        display: block;
-      }
+      flex-direction: column;
     }
   }
 }

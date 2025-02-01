@@ -158,9 +158,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-4);
+  background-color: var(--color-3);
   border-radius: 10px;
-  border: 2px solid var(--color-4);
+  border: 2px solid var(--color-3);
 }
 
 ::-webkit-scrollbar-thumb:hover {

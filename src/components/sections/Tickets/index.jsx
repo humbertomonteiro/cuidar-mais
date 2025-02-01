@@ -3,7 +3,7 @@ import styles from "./tickets.module.css";
 import Section from "../../shared/Section";
 import Title from "../../shared/Title";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import CarouselSimple from "../../shared/CarouselSimple";
+// import CarouselSimple from "../../shared/CarouselSimple";
 import FormGetData from "../../shared/FormGetData";
 
 import { IoTicketOutline } from "react-icons/io5";
@@ -163,28 +163,32 @@ const Tickets = () => {
           <strong>⚡ Confira os valores e garanta o melhor preço:</strong>
         </div>
         <div className={styles.boxes}>
-          <div className={styles.boxDesktop}>
-            <CarouselSimple
-              slides={[
-                {
-                  id: 1,
-                  content: (
-                    <Item1 setFormGetData={setFormGetData} setLink={setLink} />
-                  ),
-                },
-                {
-                  id: 2,
-                  content: <Item2 />,
-                },
-                {
-                  id: 3,
-                  content: <Item3 />,
-                },
-              ]}
-              numberSlidesView={3}
-            />
-          </div>
-          <div className={styles.boxMobile}>
+          <Item1 setFormGetData={setFormGetData} setLink={setLink} />
+          <Item2 />
+          <Item3 />
+
+          {/* <div className={styles.boxDesktop}> */}
+          {/* <CarouselSimple
+            slides={[
+              {
+                id: 1,
+                content: (
+                  <Item1 setFormGetData={setFormGetData} setLink={setLink} />
+                ),
+              },
+              {
+                id: 2,
+                content: <Item2 />,
+              },
+              {
+                id: 3,
+                content: <Item3 />,
+              },
+            ]}
+            numberSlidesView={3}
+          /> */}
+          {/* </div> */}
+          {/* <div className={styles.boxMobile}>
             <CarouselSimple
               slides={[
                 {
@@ -205,7 +209,7 @@ const Tickets = () => {
               numberSlidesView={1}
               delay={15000}
             />
-          </div>
+          </div> */}
         </div>
         {formGetData && (
           <FormGetData setFormGetData={setFormGetData} link={link} />
