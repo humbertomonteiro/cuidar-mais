@@ -61,7 +61,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 50vh;
+  height: 45vh;
   object-fit: cover;
   object-position: right bottom;
   opacity: 0.8;
@@ -167,7 +167,7 @@ body {
   background-color: #555;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 890px) {
   .bubbles .bg-top {
     height: 30vh;
   }

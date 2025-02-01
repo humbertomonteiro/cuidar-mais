@@ -4,7 +4,42 @@ import styles from "./form.module.css";
 
 import { FaArrowRight } from "react-icons/fa";
 
+import { useState } from "react";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../../../../firebaseConfig";
+
+import toast from "react-hot-toast";
+
 const Form = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState(0);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      await addDoc(collection(db, "participante"), {
+        name,
+        email,
+        number,
+      });
+      setName("");
+      setEmail("");
+      setNumber("");
+      toast.success("Dados enviado com sucesso!", {
+        duration: 4000,
+        position: "bottom-right",
+      });
+    } catch (error) {
+      toast.error("Erro ao cadastrar dados, por favor tente mais tarde.", {
+        duration: 4000,
+        position: "bottom-right",
+      });
+      console.log("Error: " + error);
+    }
+  };
+
   return (
     <Section>
       <div data-aos="zoom-in" className={styles.container}>
@@ -14,7 +49,7 @@ const Form = () => {
             alt="Pessoas unidas"
           />
         </div>
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <h2>Cadastre-se agora e fique por dentro!</h2>
           <p>
             Preencha seus dados abaixo e conecte-se com oportunidades incríveis.
@@ -23,17 +58,34 @@ const Form = () => {
           </p>
           <label htmlFor="">
             <span>Nome e sobrenome</span>
-            <input type="text" placeholder="Ex: Jhon Joe" required />
+            <input
+              type="text"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+              placeholder="Ex: Jhon Joe"
+              required
+            />
           </label>
           <label htmlFor="">
             <span>E-mail</span>
-            <input type="email" placeholder="Ex: jhon@joe.com" required />
+            <input
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              placeholder="Ex: jhon@joe.com"
+              required
+            />
           </label>
           <label htmlFor="">
             <span>Whatsapp</span>
-            <input type="number" placeholder="Ex: 11 900000000" />
+            <input
+              type="number"
+              onChange={(e) => setNumber(e.target.value)}
+              value={number}
+              placeholder="Ex: 11 900000000"
+            />
           </label>
-          <ButtonSecondary action="click">
+          <ButtonSecondary type="submit" action="click">
             Junte-se a nós <FaArrowRight />
           </ButtonSecondary>
         </form>

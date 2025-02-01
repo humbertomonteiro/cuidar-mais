@@ -27,6 +27,8 @@ import "aos/dist/aos.css";
 import bgTop from "./assets/bg/bg-top1.jpg";
 import bgBottom from "./assets/bg/bg-bootm1.jpg";
 
+import { Toaster } from "react-hot-toast";
+
 function App() {
   const [visibleItems, setVisibleItems] = useState(4);
 
@@ -50,6 +52,7 @@ function App() {
 
   return (
     <>
+      <Toaster position="top-right" reverseOrder={false} />
       <TopBar
         text={"Quer participar do próximo congresso?"}
         action={"link"}

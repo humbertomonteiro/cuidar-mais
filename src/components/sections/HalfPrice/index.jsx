@@ -3,9 +3,12 @@ import styles from "./halfPrice.module.css";
 import Section from "../../shared/Section";
 import Title from "../../shared/Title";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-// import img from "../../../assets/imgs/meia-entrada/img.jpg";
+import FormGetData from "../../shared/FormGetData";
+
+import { useState } from "react";
 
 export default function HalfiPrice() {
+  const [formGetData, setFormGetData] = useState(false);
   return (
     <Section>
       <Title text="Meia entrada" align="center" />
@@ -66,14 +69,19 @@ export default function HalfiPrice() {
               <span>10X de</span>R$ 39,90
             </strong>
             <ButtonSecondary
-              action="link"
-              link="https://cielolink.com.br/40yi0G0"
-              target="_blank"
+              action="button"
+              onClick={() => setFormGetData(true)}
             >
               Garantir meia entrada
             </ButtonSecondary>
           </div>
         </div>
+        {formGetData && (
+          <FormGetData
+            setFormGetData={setFormGetData}
+            link={"https://cielolink.com.br/40yi0G0"}
+          />
+        )}
       </div>
     </Section>
   );

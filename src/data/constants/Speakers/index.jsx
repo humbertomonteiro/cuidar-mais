@@ -79,6 +79,12 @@ const speakersImages = [
     experience:
       "Neurologista Exemplar: Formado com especialização pela UFF, Dr. Thiago é um especialista comprometido com a neurologia de crianças e adolescentes.",
   },
+  {
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBajMtM3y1QZ8XWBvN5zQVNj5nEYO961Ewg&s",
+    name: "Kadu Lins",
+    experience:
+      "Formação no Brasil e no exterior, especialista em psicomotricidade, mestrando em Educação Física na linha de pesquisa de atividades motoras e saúde pela UFPE.",
+  },
   // { url: drJoaoArnoud, name: "Dr. João Arnoud", theme: "TEA" },
   // { url: drMarconeOliveira, name: "Dr. Marcone Oliveira", theme: "TEA" },
   // { url: drRicardoKrause, name: "Dr. Ricardo Krause", theme: "TEA" },

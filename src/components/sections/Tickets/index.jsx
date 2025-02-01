@@ -4,14 +4,16 @@ import Section from "../../shared/Section";
 import Title from "../../shared/Title";
 import ButtonSecondary from "../../shared/ButtonSecondary";
 import CarouselSimple from "../../shared/CarouselSimple";
+import FormGetData from "../../shared/FormGetData";
 
 import { IoTicketOutline } from "react-icons/io5";
 
 import { useState } from "react";
 
-const item1 = () => {
-  const formBuy = () => {
-    console.log("clicou");
+const Item1 = ({ setFormGetData, setLink }) => {
+  const handleBuyTicket = (link) => {
+    setFormGetData(true);
+    setLink(link);
   };
   return (
     <div className={styles.box} data-active="true">
@@ -44,10 +46,10 @@ const item1 = () => {
             <span>Ingresso valor inteiro.</span>
             <ButtonSecondary
               style={{ width: "100%" }}
-              target="_blank"
               action="button"
-              link="https://cielolink.com.br/3EhFl7C"
-              onClick={formBuy}
+              onClick={() =>
+                handleBuyTicket("https://cielolink.com.br/3EhFl7C")
+              }
             >
               Ingresso inteiro{" "}
               <IoTicketOutline style={{ fontSize: "1.2rem" }} />
@@ -56,7 +58,7 @@ const item1 = () => {
           <div className={styles.button}>
             <span>
               Venha em grupo e garanta um desconto de R$50 por pessoa. Você tem
-              que adiquire no minimo 5 ingressos para garantir o desconto.
+              que adquirir no minimo 5 ingressos para garantir o desconto.
               (Desconto mínimo de R$ 250,00)
             </span>
             <div>
@@ -65,9 +67,10 @@ const item1 = () => {
             </div>
             <ButtonSecondary
               style={{ width: "100%" }}
-              target="_blank"
-              action="link"
-              link="https://cielolink.com.br/3EbCCw9"
+              action="button"
+              onClick={() =>
+                handleBuyTicket("https://cielolink.com.br/3EbCCw9")
+              }
             >
               Comprar grupo <IoTicketOutline style={{ fontSize: "1.2rem" }} />
             </ButtonSecondary>
@@ -79,7 +82,7 @@ const item1 = () => {
   );
 };
 
-const item2 = () => {
+const Item2 = () => {
   return (
     <div className={styles.box}>
       <strong className={styles.sale}>30% OFF</strong>
@@ -111,7 +114,7 @@ const item2 = () => {
   );
 };
 
-const item3 = () => {
+const Item3 = () => {
   return (
     <div className={styles.box}>
       <strong className={styles.sale}>20% OFF</strong>
@@ -142,23 +145,10 @@ const item3 = () => {
   );
 };
 
-const allTickets = [
-  {
-    id: 1,
-    content: item1(),
-  },
-  {
-    id: 2,
-    content: item2(),
-  },
-  {
-    id: 3,
-    content: item3(),
-  },
-];
-
 const Tickets = () => {
-  const [formGetData, setFormGetData] = useState(true);
+  const [formGetData, setFormGetData] = useState(false);
+  const [link, setLink] = useState("");
+
   return (
     <Section>
       <Title text="Ingressos Cuidar mais" align="center" />
@@ -174,30 +164,52 @@ const Tickets = () => {
         </div>
         <div className={styles.boxes}>
           <div className={styles.boxDesktop}>
-            <CarouselSimple slides={allTickets} numberSlidesView={3} />
+            <CarouselSimple
+              slides={[
+                {
+                  id: 1,
+                  content: (
+                    <Item1 setFormGetData={setFormGetData} setLink={setLink} />
+                  ),
+                },
+                {
+                  id: 2,
+                  content: <Item2 />,
+                },
+                {
+                  id: 3,
+                  content: <Item3 />,
+                },
+              ]}
+              numberSlidesView={3}
+            />
           </div>
           <div className={styles.boxMobile}>
             <CarouselSimple
-              slides={allTickets}
+              slides={[
+                {
+                  id: 1,
+                  content: (
+                    <Item1 setFormGetData={setFormGetData} setLink={setLink} />
+                  ),
+                },
+                {
+                  id: 2,
+                  content: <Item2 />,
+                },
+                {
+                  id: 3,
+                  content: <Item3 />,
+                },
+              ]}
               numberSlidesView={1}
               delay={15000}
             />
           </div>
         </div>
-        {/* {formGetData && (
-          <form className={styles.formGetData}>
-            <label>
-              <mark>
-                Informe seu nome complete para gerarmos seu certificado:
-              </mark>
-              <input type="text" required />
-            </label>
-            <label>
-              Informe seu melhor email para enviarmos seu certificado:
-              <input type="email" required />
-            </label>
-          </form>
-        )} */}
+        {formGetData && (
+          <FormGetData setFormGetData={setFormGetData} link={link} />
+        )}
       </div>
     </Section>
   );
