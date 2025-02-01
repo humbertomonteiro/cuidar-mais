@@ -6,6 +6,8 @@ import { useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../../../firebaseConfig";
 
+import { createPortal } from "react-dom";
+
 const FormGetData = ({ setFormGetData, link }) => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -30,15 +32,14 @@ const FormGetData = ({ setFormGetData, link }) => {
     }
   };
 
-  return (
+  return createPortal(
     <div className={styles.divForm}>
       <form className={styles.formGetData} onSubmit={handleSubmit}>
         <h2>Preencha os campos para garantir seu Certificado.</h2>
         <p>
           Atenção! Ao participar do nosso congresso, você vai receber um
           certificado. Para que possamos criar seu sertificado, precisamos do
-          seu nome completo e o seu e-mail principal, para que possamos
-          envia-lo.
+          seu nome completo e do seu e-mail principal.
         </p>
         <button
           className={styles.btnClose}
@@ -70,7 +71,8 @@ const FormGetData = ({ setFormGetData, link }) => {
           Ir para o checkout
         </ButtonSecondary>
       </form>
-    </div>
+    </div>,
+    document.body
   );
 };
 

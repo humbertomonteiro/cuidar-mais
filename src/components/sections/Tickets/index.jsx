@@ -166,50 +166,6 @@ const Tickets = () => {
           <Item1 setFormGetData={setFormGetData} setLink={setLink} />
           <Item2 />
           <Item3 />
-
-          {/* <div className={styles.boxDesktop}> */}
-          {/* <CarouselSimple
-            slides={[
-              {
-                id: 1,
-                content: (
-                  <Item1 setFormGetData={setFormGetData} setLink={setLink} />
-                ),
-              },
-              {
-                id: 2,
-                content: <Item2 />,
-              },
-              {
-                id: 3,
-                content: <Item3 />,
-              },
-            ]}
-            numberSlidesView={3}
-          /> */}
-          {/* </div> */}
-          {/* <div className={styles.boxMobile}>
-            <CarouselSimple
-              slides={[
-                {
-                  id: 1,
-                  content: (
-                    <Item1 setFormGetData={setFormGetData} setLink={setLink} />
-                  ),
-                },
-                {
-                  id: 2,
-                  content: <Item2 />,
-                },
-                {
-                  id: 3,
-                  content: <Item3 />,
-                },
-              ]}
-              numberSlidesView={1}
-              delay={15000}
-            />
-          </div> */}
         </div>
         {formGetData && (
           <FormGetData setFormGetData={setFormGetData} link={link} />
