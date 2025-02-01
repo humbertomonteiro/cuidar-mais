@@ -1,5 +1,5 @@
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import CarouselSimple from "../../shared/CarouselSimple";
+// import CarouselSimple from "../../shared/CarouselSimple";
 import Title from "../../shared/Title";
 import Section from "../../shared/Section";
 import styles from "./beSupport.module.css";
@@ -40,12 +40,15 @@ const BeSupport = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.desktop}>
-          <CarouselSimple slides={itemsBoxesSupport} numberSlidesView={3} />
+        <div className={styles.boxes}>
+          {itemsBoxesSupport.map((boxSupport, index) => (
+            <div key={index}>{boxSupport.content}</div>
+          ))}
+          {/* <CarouselSimple slides={itemsBoxesSupport} numberSlidesView={3} /> */}
         </div>
-        <div className={styles.mobile}>
+        {/* <div className={styles.mobile}>
           <CarouselSimple slides={itemsBoxesSupport} delay={10000} />
-        </div>
+        </div> */}
         <div className={styles.buttons}>
           <ButtonSecondary
             target="_blank"

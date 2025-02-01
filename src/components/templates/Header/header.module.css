@@ -48,7 +48,7 @@
   padding: 1rem;
 
   & img {
-    width: 380px;
+    max-width: 380px;
     margin: -20px 0;
   }
 
@@ -81,26 +81,18 @@
 @media (max-width: 1000px) {
   .content {
     width: 100%;
+    & img {
+      width: 60%;
+    }
   }
 
-  .img {
-    display: none;
-  }
-
-  .logos {
+  .phrase {
     display: none;
   }
 }
 
 @media (max-width: 480px) {
-  .phrase {
-    display: none;
-  }
   .content {
-    & img {
-      width: 65%;
-    }
-
     & h1 {
       font-size: 2.2rem;
     }

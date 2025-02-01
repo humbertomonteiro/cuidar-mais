@@ -37,13 +37,3 @@
     border-radius: 1rem;
   }
 }
-
-@media (max-width: 480px) {
-  .box {
-    padding-bottom: 3rem;
-
-    & strong {
-      bottom: 2rem;
-    }
-  }
-}
