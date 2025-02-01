@@ -65,7 +65,7 @@ function App() {
         <CarouselSimple
           slides={itemsSpeakers}
           numberSlidesView={visibleItems - 1}
-          textTitle="Palestrantes"
+          textTitle="Conheça nossos palestrantes"
         />
         <Privilege />
         <Local />

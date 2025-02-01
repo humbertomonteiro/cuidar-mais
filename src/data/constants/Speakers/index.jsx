@@ -21,7 +21,7 @@ import jessicaAmorim from "../../../assets/speakers/jessica-amorim.jpeg";
 
 const speakersImages = [
   {
-    url: "https://pediatrics.ucsd.edu/_images/research/Alysson_Muotri-copy.jpeg",
+    url: "https://carta.anthropogeny.org/sites/default/files/styles/scale_width_200/public/pictures/picture-507-1634249380.jpg?itok=fs5AjsAP",
     name: "Dr Allyson R. Moutri",
     experience:
       "professor dos Departamentos de Pediatria e Medicina Celular e Molecular da Universidade da Califórnia, em San Diego.",
@@ -104,12 +104,16 @@ const speakersImages = [
   // { url: profLucelmoLacerda, name: "Prof. Dr. Lucelmo Lacerda", theme: "TEA" },
 ];
 
-import imgDeco from "../../../assets/bg/bg-bootm1.jpg";
+import imgBottom from "../../../assets/bg/bg-bootm1.jpg";
+import imgTop from "../../../assets/bg/bg-top1.jpg";
 
 export const itemsSpeakers = speakersImages.map((item, index) => ({
   id: index + 1,
   content: (
     <div className={styles.card}>
+      <div className={styles.imgTop}>
+        <img src={imgTop} alt="logo colorida" />
+      </div>
       <img
         key={index}
         className={styles.img}
@@ -118,11 +122,10 @@ export const itemsSpeakers = speakersImages.map((item, index) => ({
       />
       <div className={styles.content}>
         <h3>{item.name}</h3>
-        {/* <strong>Tema: </strong> */}
-        <span>{item.experience}</span>
+        <p>{item.experience}</p>
       </div>
-      <div className={styles.imgDeco}>
-        <img src={imgDeco} alt="logo colorida" />
+      <div className={styles.imgBottom}>
+        <img src={imgBottom} alt="logo colorida" />
       </div>
     </div>
   ),

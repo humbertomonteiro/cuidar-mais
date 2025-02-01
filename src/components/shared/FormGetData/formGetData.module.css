@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #fafafada;
+  background-color: #fafafaf5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,8 +26,8 @@
     background-color: var(--gray);
     border: 1px solid var(--border-color);
     border-radius: 1rem;
-    padding: 3rem 1.5rem;
-    box-shadow: 0 0 20px #05b49d7c;
+    padding: 3rem;
+    box-shadow: 0 0 8px #acacac;
     z-index: 5;
 
     & .btnClose {
@@ -45,6 +45,7 @@
       text-align: center;
       color: var(--text-1);
       margin-bottom: 1rem;
+      font-size: 1.8rem;
     }
 
     & p {
@@ -69,7 +70,7 @@
         padding: 1rem;
         border-radius: 1.5rem;
         border: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         font-size: 1rem;
         background-color: var(--color-4);
         border: 1px solid var(--border-color);
