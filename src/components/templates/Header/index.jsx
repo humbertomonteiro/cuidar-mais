@@ -4,10 +4,16 @@ import logo from "../../../assets/logos/logo.png";
 import ButtonSecondary from "../../shared/ButtonSecondary";
 import logosTel from "../../../assets/logos/logos-telefone.png";
 import { IoRocketOutline } from "react-icons/io5";
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 const Header = () => {
   return (
     <header data-aos="fade-up" className={styles.container}>
+      <div className={styles.phrase} data-aos="fade-right" data-aos-delay="600">
+        <RiDoubleQuotesL className={styles.quotesTop} />
+        <p>Cada aprendizado é uma peça que ajudasmos a encaixar</p>
+        <RiDoubleQuotesR className={styles.quotesBottom} />
+      </div>
       <div className={styles.content}>
         <img src={logo} alt="Logo Salud" />
         <h1>Terceira edição do nosso Congresso!</h1>
@@ -20,15 +26,10 @@ const Header = () => {
           Quero participar <IoRocketOutline style={{ fontSize: "1.7rem" }} />
         </ButtonSecondary>
       </div>
-      {/* <div className={styles.img}>
-        <img
-          src="https://img.freepik.com/fotos-gratis/pessoas-que-participam-de-um-evento-de-alto-protocolo_23-2150951407.jpg?t=st=1735935325~exp=1735938925~hmac=64b26d1bedd51fe9e8f7c45f9dd2ed60174888845f95ed0758c7bc09408c13f6&w=900"
-          alt="Palestra"
-        />
-      </div> */}
-      <div className={styles.logos}>
+
+      {/* <div className={styles.logos}>
         <img src={logosTel} alt="organizadores do projeto" />
-      </div>
+      </div> */}
     </header>
   );
 };

@@ -13,7 +13,7 @@ import toast from "react-hot-toast";
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();

@@ -8,16 +8,17 @@ import document from "../../../data/documents/congresso-autismo-support.pdf";
 import { FaRegFilePdf } from "react-icons/fa6";
 
 import { FaArrowRight } from "react-icons/fa";
+import { TbArrowBigRightLine } from "react-icons/tb";
 
 const BeSupport = () => {
   return (
     <Section>
+      <Title text="Seja um Apoiador" align="center" />
       <div data-aos="zoom-in" className={styles.container}>
-        <Title text="Seja um Apoiador" align="center" />
-        <p>
+        {/* <p>
           O MAIOR ENCONTRO DE PROFISSIONAIS SOBRE NEURODIVERSIDADE DO MARANHÃO
-        </p>
-        <div className={styles.content}>
+        </p> */}
+        <div className={styles.content} data-aos="zoom-in">
           <div className={styles.contentTitle}>
             <h3>
               EXPOSIÇÃO
@@ -25,9 +26,18 @@ const BeSupport = () => {
             </h3>
           </div>
           <ul>
-            <li>+DE 2.000 PESSOAS</li>
-            <li>+DE 30H EM CONTEÚDOS</li>
-            <li>+DE R$ 30.000 EM MÍDIAS</li>
+            <li>
+              <TbArrowBigRightLine />
+              +DE 2.000 PESSOAS
+            </li>
+            <li>
+              <TbArrowBigRightLine />
+              +DE 30H EM CONTEÚDOS
+            </li>
+            <li>
+              <TbArrowBigRightLine />
+              +DE R$ 30.000 EM MÍDIAS
+            </li>
           </ul>
         </div>
         <div className={styles.desktop}>

@@ -5,12 +5,12 @@ import Section from "../../shared/Section";
 const Videos = () => {
   return (
     <Section className="container-default">
-      {/* <Title text="Videos" align="center" color={4} /> */}
+      <Title text="Nossos Videos" align="center" />
       <div data-aos="zoom-in" className={styles.container}>
-        <div className={styles.content}>
+        {/* <div className={styles.content}>
           <h3>Nossos vídeos</h3>
           <p>Veja o conteúdo que produzimos no youtube.</p>
-        </div>
+        </div> */}
         <div className={styles.boxes}>
           <div className={styles.box}>
             <iframe
