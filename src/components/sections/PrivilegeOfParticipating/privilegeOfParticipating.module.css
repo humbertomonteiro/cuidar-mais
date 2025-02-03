@@ -6,6 +6,7 @@
   padding: 0 0 1rem 0;
 
   & article {
+    margin: 0 auto;
     width: 23%;
     background: var(--color-4);
     border: 1px solid var(--border-color);
@@ -47,7 +48,7 @@
 @media (max-width: 480px) {
   .boxes {
     & article {
-      width: 100%;
+      width: 90%;
     }
   }
 }

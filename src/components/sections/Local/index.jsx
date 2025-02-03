@@ -9,8 +9,8 @@ const Local = () => {
   return (
     <Section>
       <Title text={"Local confirmado"} align="center" />
-      <div className={styles.container}>
-        <div className={styles.boxes} data-aos="zoom-in">
+      <div className={styles.container} data-aos="zoom-in">
+        <div className={styles.boxes}>
           <div className={styles.boxVideo}>
             <video controls={true} src={multicenter}></video>
           </div>

@@ -1,6 +1,7 @@
 import styles from "./speakers.module.css";
 
 import jessicaAmorim from "../../../assets/speakers/jessica-amorim.jpeg";
+import camilaLeon from "../../../assets/speakers/camila-leon.jpeg";
 // import drJoaoArnoud from "../../../assets/speakers/dr-joao-arnoud.png";
 // import drMarconeOliveira from "../../../assets/speakers/dr-marcone-oliveira.png";
 // import drRicardoKrause from "../../../assets/speakers/dr-ricardo-krause.png";
@@ -84,6 +85,18 @@ const speakersImages = [
     name: "Kadu Lins",
     experience:
       "Formação no Brasil e no exterior, especialista em psicomotricidade, mestrando em Educação Física na linha de pesquisa de atividades motoras e saúde pela UFPE.",
+  },
+  {
+    // url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBajMtM3y1QZ8XWBvN5zQVNj5nEYO961Ewg&s",
+    name: "Mateus Brasileiro",
+    experience:
+      "Mestre e doutor em Psicologia Experimental: Análise de Comportamento (PUC - SP), Umas das grandes referências em ABA do Brasil na atualidade.  ",
+  },
+  {
+    url: camilaLeon,
+    name: "Camila León",
+    experience:
+      "Pedagoga, Licenciada em Letras, Psicopedagoga, Mestre e Doutora em Distúrbio do Desenvolvimento.",
   },
   // { url: drJoaoArnoud, name: "Dr. João Arnoud", theme: "TEA" },
   // { url: drMarconeOliveira, name: "Dr. Marcone Oliveira", theme: "TEA" },

@@ -10,6 +10,8 @@ import { db } from "../../../../firebaseConfig";
 
 import toast from "react-hot-toast";
 
+import img from "../../../assets/events/palestrantes-e-organizadores.jpeg";
+
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -44,10 +46,7 @@ const Form = () => {
     <Section>
       <div data-aos="zoom-in" className={styles.container}>
         <div className={styles.img}>
-          <img
-            src="https://img.freepik.com/fotos-gratis/estudantes-internacionais-entusiasmados-em-trajes-casuais-prontos-para-o-trabalho-em-equipe-retrato-interior-de-feliz-garota-mulata-com-cabelo-encaracolado-de-maos-dadas-com-a-senhora-europeia-e-o-jovem-africano-no-escritorio_197531-3855.jpg?t=st=1736088929~exp=1736092529~hmac=f3682b8700aea8148d1293a574d9138866e248c96d0da21f4bbf20a52243d5a2&w=740"
-            alt="Pessoas unidas"
-          />
+          <img src={img} alt="Pessoas unidas" />
         </div>
         <form onSubmit={handleSubmit}>
           <h2>Cadastre-se agora e fique por dentro!</h2>

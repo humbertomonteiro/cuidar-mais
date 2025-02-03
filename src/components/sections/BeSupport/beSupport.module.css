@@ -24,6 +24,10 @@
   & .boxes {
     display: flex;
     gap: 1rem;
+
+    & > div {
+      width: 33%;
+    }
   }
 
   & .content {
@@ -79,8 +83,14 @@
     flex-direction: column;
   }
 
-  .boxes {
-    flex-direction: column;
+  .container {
+    & .boxes {
+      flex-direction: column;
+
+      & > div {
+        width: 100%;
+      }
+    }
   }
 
   /* .desktop {
