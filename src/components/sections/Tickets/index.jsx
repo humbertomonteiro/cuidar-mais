@@ -10,7 +10,7 @@ import { IoTicketOutline } from "react-icons/io5";
 
 import { useState } from "react";
 
-const Item1 = ({ setFormGetData, setLink }) => {
+const Item1 = ({ setFormGetData, setLink, setGroup }) => {
   const handleBuyTicket = (link) => {
     setFormGetData(true);
     setLink(link);
@@ -47,9 +47,10 @@ const Item1 = ({ setFormGetData, setLink }) => {
             <ButtonSecondary
               style={{ width: "100%" }}
               action="button"
-              onClick={() =>
-                handleBuyTicket("https://cielolink.com.br/3EhFl7C")
-              }
+              onClick={() => {
+                setGroup(false);
+                handleBuyTicket("https://cielolink.com.br/3EhFl7C");
+              }}
             >
               Ingresso inteiro{" "}
               <IoTicketOutline style={{ fontSize: "1.2rem" }} />
@@ -68,9 +69,10 @@ const Item1 = ({ setFormGetData, setLink }) => {
             <ButtonSecondary
               style={{ width: "100%" }}
               action="button"
-              onClick={() =>
-                handleBuyTicket("https://cielolink.com.br/3EbCCw9")
-              }
+              onClick={() => {
+                handleBuyTicket("https://cielolink.com.br/3EbCCw9");
+                setGroup(true);
+              }}
             >
               Comprar grupo <IoTicketOutline style={{ fontSize: "1.2rem" }} />
             </ButtonSecondary>
@@ -147,6 +149,7 @@ const Item3 = () => {
 
 const Tickets = () => {
   const [formGetData, setFormGetData] = useState(false);
+  const [group, setGroup] = useState(false);
   const [link, setLink] = useState("");
 
   return (
@@ -163,12 +166,20 @@ const Tickets = () => {
           <strong>⚡ Confira os valores e garanta o melhor preço:</strong>
         </div>
         <div className={styles.boxes}>
-          <Item1 setFormGetData={setFormGetData} setLink={setLink} />
+          <Item1
+            setFormGetData={setFormGetData}
+            setLink={setLink}
+            setGroup={setGroup}
+          />
           <Item2 />
           <Item3 />
         </div>
         {formGetData && (
-          <FormGetData setFormGetData={setFormGetData} link={link} />
+          <FormGetData
+            setFormGetData={setFormGetData}
+            link={link}
+            group={group}
+          />
         )}
       </div>
     </Section>

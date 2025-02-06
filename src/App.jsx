@@ -54,9 +54,9 @@ function App() {
     <>
       <Toaster position="top-right" reverseOrder={false} />
       <TopBar
-        text={"Participar do próximo congresso?"}
+        text={"Compre seu ingresso com menor valor!"}
         action={"link"}
-        textAction={"Clique aqui !"}
+        textAction={"Comprar agora!"}
         linkAction={"#tickets"}
       />
       <Header />
