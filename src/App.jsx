@@ -10,6 +10,7 @@ import CarouselSimple from "./components/shared/CarouselSimple";
 import HalfiPrice from "./components/sections/HalfPrice";
 import Politic from "./components/sections/Politic";
 import Local from "./components/sections/Local";
+import MusicTherapy from "./components/sections/MusicTherapy";
 
 import { itemsOurSevices } from "./data/constants/OurServices";
 // import { ItemsSponsors } from "./data/constants/Sponsors";
@@ -78,7 +79,8 @@ function App() {
           slides={ItemsSponsors}
           numberSlidesView={visibleItems}
           textTitle="Patrocinadores"
-        /> */}
+          /> */}
+        <MusicTherapy />
         <Videos />
         <CarouselSimple
           slides={itemsOurSevices}

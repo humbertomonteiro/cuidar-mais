@@ -4,6 +4,9 @@ import jessicaAmorim from "../../../assets/speakers/jessica-amorim.jpeg";
 import camilaLeon from "../../../assets/speakers/camila-leon.jpeg";
 import kaduLins from "../../../assets/speakers/kadu-lins.png";
 import mateusBrasileiro from "../../../assets/speakers/mateus-brasileiro.jpg";
+import walberCastro from "../../../assets/speakers/walber-castro.jpeg";
+import damiaoSilva from "../../../assets/speakers/damiao-silva.jpeg";
+import nicksonSoeiro from "../../../assets/speakers/nickson-soeiro.jpeg";
 // import drJoaoArnoud from "../../../assets/speakers/dr-joao-arnoud.png";
 // import drMarconeOliveira from "../../../assets/speakers/dr-marcone-oliveira.png";
 // import drRicardoKrause from "../../../assets/speakers/dr-ricardo-krause.png";
@@ -53,12 +56,12 @@ const speakersImages = [
     experience:
       "specialista em Desenvolvimento infantil, Análise de Comportamento Aplicada, Intervenção Precoce no Autismo, 15 anos de atuação clínica como Terapeuta Ocupacional.",
   },
-  {
-    url: "https://ugc.production.linktr.ee/25e937f6-bbf3-4564-98a8-b591797e86e2_WhatsApp-Image-2024-10-16-at-14.29.25.jpeg?io=true&size=avatar-v3_0",
-    name: "Dr. Marcone Oliveira",
-    experience:
-      "Neurologista infantil dedicado, Especializado no atendimento de crianças com autismo, transtornos de aprendizado, TDAH e epilepsia.",
-  },
+  // {
+  //   url: "https://ugc.production.linktr.ee/25e937f6-bbf3-4564-98a8-b591797e86e2_WhatsApp-Image-2024-10-16-at-14.29.25.jpeg?io=true&size=avatar-v3_0",
+  //   name: "Dr. Marcone Oliveira",
+  //   experience:
+  //     "Neurologista infantil dedicado, Especializado no atendimento de crianças com autismo, transtornos de aprendizado, TDAH e epilepsia.",
+  // },
   {
     url: "https://www.revistacircuito.com/wp-content/uploads/2019/09/14979812132980-696x545.jpg",
     name: "Nicolas Brito Sales",
@@ -100,6 +103,27 @@ const speakersImages = [
     experience:
       "Pedagoga, Licenciada em Letras, Psicopedagoga, Mestre e Doutora em Distúrbio do Desenvolvimento.",
   },
+  {
+    url: walberCastro,
+    type: "music",
+    name: "Walber Castro Lobato",
+    experience:
+      "Musicoterapeuta. Licenciado em música(UFMA), Pós graduado em Musicoterapia, Pós graduado em Neurociência e Comportamento.",
+  },
+  {
+    url: damiaoSilva,
+    type: "music",
+    name: "Damião Silva Santos Júnior",
+    experience:
+      "Musicoterapeuta clínico, especialista em Saúde mental e Autismo, e professor de música com vasta experiência.",
+  },
+  {
+    url: nicksonSoeiro,
+    type: "music",
+    name: "Nickson Soeiro",
+    experience:
+      "Graduado em Educação Musical pela UEMA e Pós graduado em Musicoterapia pela CENSUPEG, é mestrando em Estudos Comparados.",
+  },
   // { url: drJoaoArnoud, name: "Dr. João Arnoud", theme: "TEA" },
   // { url: drMarconeOliveira, name: "Dr. Marcone Oliveira", theme: "TEA" },
   // { url: drRicardoKrause, name: "Dr. Ricardo Krause", theme: "TEA" },
@@ -124,6 +148,7 @@ import imgTop from "../../../assets/bg/bg-top1.jpg";
 
 export const itemsSpeakers = speakersImages.map((item, index) => ({
   id: index + 1,
+  type: item.type,
   content: (
     <div className={styles.card}>
       <div className={styles.imgTop}>
