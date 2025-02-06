@@ -22,7 +22,7 @@ const Item1 = ({ setFormGetData, setLink, setGroup }) => {
         <span>Ingresso</span>
         <h4>Pré-venda</h4>
         <h5>Disponível até:</h5>
-        <p>15/02 ou enquanto durar</p>
+        <p>15/03 ou enquanto durar</p>
       </div>
       <div className={styles.boxValue}>
         <h4>
@@ -92,7 +92,7 @@ const Item2 = () => {
         <span>Ingresso</span>
         <h4>Lote 1</h4>
         <h5>Disponível até:</h5>
-        <p>01/03 ou enquanto durar</p>
+        <p>01/04 ou enquanto durar</p>
       </div>
 
       <div className={styles.boxValue}>
@@ -124,7 +124,7 @@ const Item3 = () => {
         <span>Ingresso</span>
         <h4>Lote 2</h4>
         <h5>Disponível até:</h5>
-        <p>15/03 ou enquanto durar</p>
+        <p>15/05 ou enquanto durar</p>
       </div>
       <div className={styles.boxValue}>
         <h4>
