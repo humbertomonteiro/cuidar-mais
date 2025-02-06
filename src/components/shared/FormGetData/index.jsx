@@ -20,15 +20,15 @@ const FormGetData = ({ setFormGetData, link, group }) => {
     setNames(newNames);
   };
 
-  const addNameField = () => {
-    setNames([...names, ""]);
-  };
+  // const addNameField = () => {
+  //   setNames([...names, ""]);
+  // };
 
-  const removeNameField = (index) => {
-    if (names.length > 5) {
-      setNames(names.filter((_, i) => i !== index));
-    }
-  };
+  // const removeNameField = (index) => {
+  //   if (names.length > 5) {
+  //     setNames(names.filter((_, i) => i !== index));
+  //   }
+  // };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -102,7 +102,7 @@ const FormGetData = ({ setFormGetData, link, group }) => {
                     onChange={(e) => handleChange(index, e.target.value)}
                     value={name}
                   />
-                  {names.length > 5 && (
+                  {/* {names.length > 5 && (
                     <button
                       type="button"
                       onClick={() => removeNameField(index)}
@@ -110,16 +110,16 @@ const FormGetData = ({ setFormGetData, link, group }) => {
                     >
                       ❌
                     </button>
-                  )}
+                  )} */}
                 </label>
               ))}
-              <button
+              {/* <button
                 type="button"
                 onClick={addNameField}
                 className={styles.addName}
               >
                 ➕ Adicionar Participante
-              </button>
+              </button> */}
             </div>
           ) : (
             <label>
