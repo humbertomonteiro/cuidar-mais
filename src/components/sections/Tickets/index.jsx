@@ -52,7 +52,7 @@ const Item1 = ({ setFormGetData, setLink, setGroup }) => {
                 handleBuyTicket("https://cielolink.com.br/3EhFl7C");
               }}
             >
-              Ingresso inteiro{" "}
+              COMPRAR INGRESSO{" "}
               <IoTicketOutline style={{ fontSize: "1.2rem" }} />
             </ButtonSecondary>
           </div>
@@ -74,7 +74,8 @@ const Item1 = ({ setFormGetData, setLink, setGroup }) => {
                 setGroup(true);
               }}
             >
-              Comprar grupo <IoTicketOutline style={{ fontSize: "1.2rem" }} />
+              COMPRAR INGRESSO{" "}
+              <IoTicketOutline style={{ fontSize: "1.2rem" }} />
             </ButtonSecondary>
           </div>
         </div>

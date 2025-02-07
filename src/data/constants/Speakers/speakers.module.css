@@ -30,12 +30,12 @@
 
     & h3 {
       font-size: 1.5rem;
-      color: var(--text-1);
+      color: var(--text-dark);
       margin-bottom: 0.5rem;
     }
 
     & p {
-      color: var(--text-2);
+      color: var(--text-dark-2);
       line-height: 150%;
     }
   }

@@ -72,7 +72,7 @@ export default function HalfiPrice() {
               action="button"
               onClick={() => setFormGetData(true)}
             >
-              Garantir meia entrada
+              COMPRAR INGRESSO
             </ButtonSecondary>
           </div>
         </div>

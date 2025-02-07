@@ -8,7 +8,7 @@
   & article {
     margin: 0 auto;
     width: 23%;
-    background: var(--color-4);
+    background: var(--color-5);
     border: 1px solid var(--border-color);
     padding: 2rem 1rem;
     border-radius: 1rem;
@@ -25,14 +25,14 @@
 
     & h3 {
       font-size: 1.2rem;
-      color: var(--text-1);
+      color: var(--text-dark);
       text-transform: uppercase;
     }
 
     & p {
       text-align: center;
       font-size: 0.9rem;
-      color: var(--text-2);
+      color: var(--text-dark-2);
     }
   }
 }

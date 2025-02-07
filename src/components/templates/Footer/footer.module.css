@@ -1,8 +1,8 @@
 .container {
   text-align: center;
-  background-color: var(--color-4);
+  background-color: var(--color-5);
   border-top: 1px solid var(--border-color);
-  color: var(--text-1);
+  color: var(--text-dark);
 
   & .infos {
     display: flex;
@@ -19,12 +19,17 @@
       min-width: 280px;
 
       & img {
-        width: 60%;
+        width: 100%;
+      }
+
+      & .logo {
+        width: 220px;
       }
 
       & h3 {
-        font-size: 1.5rem;
+        font-size: 0.9rem;
         margin-bottom: 1rem;
+        color: var(--text-1);
       }
 
       & .links {
@@ -33,8 +38,8 @@
         font-size: 2rem;
 
         & a {
-          color: var(--text-2);
-          background-color: var(--color-4);
+          color: var(--text-light);
+          background-color: var(--color-1);
           border: 1px solid var(--border-color);
           padding: 0.5rem;
           width: 60px;

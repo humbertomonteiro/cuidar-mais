@@ -14,7 +14,7 @@
   border-radius: 0.75rem;
   border: 1px solid var(--border-color);
   text-decoration: none;
-  color: var(--text-2);
+  color: var(--text-dark-2);
 
   & > svg {
     font-size: 5rem;
@@ -26,7 +26,7 @@
     font-size: 1.5rem;
     max-width: 80%;
     margin-bottom: 0.5rem;
-    color: var(--text-1);
+    color: var(--text-dark);
   }
 
   & p {
@@ -43,7 +43,7 @@
   margin-bottom: 1rem;
 
   & > li {
-    background: var(--color-4);
+    background: var(--color-5);
     padding: 0.75rem 1rem;
     border-radius: 0.75rem;
     border: 1px solid var(--border-color);
@@ -51,7 +51,7 @@
 
   & li div h4 {
     font-size: 1rem;
-    color: var(--text-1);
+    color: var(--text-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +59,7 @@
 
     & svg {
       font-size: 2rem;
-      color: var(--text-1);
+      color: var(--text-dark-2);
     }
   }
 

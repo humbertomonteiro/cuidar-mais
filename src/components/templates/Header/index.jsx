@@ -9,11 +9,11 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 const Header = () => {
   return (
     <header id="header" data-aos="fade-up" className={styles.container}>
-      <div className={styles.phrase} data-aos="fade-right" data-aos-delay="600">
+      {/* <div className={styles.phrase} data-aos="fade-right" data-aos-delay="600">
         <RiDoubleQuotesL className={styles.quotesTop} />
         <p>Cada aprendizado é uma peça que ajudasmos a encaixar</p>
         <RiDoubleQuotesR className={styles.quotesBottom} />
-      </div>
+      </div> */}
       <div className={styles.content}>
         <img src={logo} alt="Logo Salud" />
         <h1>Terceira edição do nosso Congresso!</h1>
@@ -23,7 +23,7 @@ const Header = () => {
         </p>
 
         <ButtonSecondary action={"link"} link="#tickets">
-          Quero participar <IoRocketOutline style={{ fontSize: "1.7rem" }} />
+          COMPRAR INGRESSO <IoRocketOutline style={{ fontSize: "1.7rem" }} />
         </ButtonSecondary>
       </div>
 

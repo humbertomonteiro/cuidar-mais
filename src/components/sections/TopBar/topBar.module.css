@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--color-1);
+  background-image: var(--gradient-1);
   color: var(--white);
   z-index: 4;
   display: flex;
@@ -14,8 +14,8 @@
 
   & a,
   button {
-    background-color: var(--color-4);
-    color: var(--text-1);
+    background-color: var(--button-secondary);
+    color: var(--text-light);
     font-weight: bold;
     border: 1px solid var(--border-color);
     border-radius: 1rem;
@@ -31,8 +31,7 @@
 
   & a:hover,
   button:hover {
-    background-color: var(--color-1);
-    color: var(--white);
+    background-color: var(--button-secondary-hover);
     border: 1px solid var(--white);
   }
 }

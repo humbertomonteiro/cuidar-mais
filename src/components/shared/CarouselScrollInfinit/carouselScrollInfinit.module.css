@@ -38,14 +38,14 @@
 }
 
 .noContent {
-  background-color: var(--color-4);
+  background-color: var(--color-5);
   height: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
   border: 1px solid var(--border-color);
-  color: var(--text-1);
+  color: var(--text-dark);
 
   text-align: center;
 }

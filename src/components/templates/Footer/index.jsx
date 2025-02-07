@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.infos}>
         <a href="#header" className={styles.info}>
-          <img src={logo} alt="Realização do projeto" />
+          <img className={styles.logo} src={logo} alt="Realização do projeto" />
         </a>
 
         <div className={styles.info}>

@@ -2,13 +2,16 @@
 
 :root {
   --color-1: #05b49c;
-  --color-2: #e26891;
+  --color-2: #ff4f8b;
   --color-3: #ffd26a;
-  --color-4: #fff;
-  --color-5: #eafaf8;
+  --color-4: #7c22dde1;
+  --color-5: #e9e9e9e5;
 
-  --text-1: #1d3c3b;
-  --text-1: #4e6f6d;
+  --text-light: #ffffff;
+  --text-light-2: #f9f9f9;
+
+  --text-dark: #2b0f3f;
+  --text-dark-2: #212121;
 
   --border-color: #b0d1ce;
   --divider-color: #dceae9;
@@ -18,21 +21,15 @@
 
   --font-1: "Montserrat";
 
-  --gradient-1: linear-gradient(
-    94deg,
-    rgba(28, 180, 168, 1) 20%,
-    rgba(169, 222, 216, 1) 77%,
-    rgba(218, 237, 233, 1) 98%,
-    rgba(246, 245, 243, 1) 100%
-  );
+  --gradient-1: linear-gradient(135deg, #05b49c, #7d22dd);
+  --gradient-2: linear-gradient(135deg, #ff4f8acc, #ffd26ac2);
+  --gradient-3: linear-gradient(135deg, #05b49ddc, #ff4f8adc);
 
-  --gradient-2: linear-gradient(
-    254deg,
-    rgba(28, 180, 168, 1) 20%,
-    rgba(169, 222, 216, 1) 77%,
-    rgba(218, 237, 233, 1) 98%,
-    rgba(246, 245, 243, 1) 100%
-  );
+  --button-primary: #7d22dd;
+  --button-primary-hover: #9e30ff;
+
+  --button-secondary: #05b49c;
+  --button-secondary-hover: #04816e;
 }
 
 * {
@@ -47,7 +44,12 @@ body {
 }
 
 .bubbles {
-  background-color: var(--gray);
+  background-image: linear-gradient(135deg, #05b49dec, #7c22ddcc),
+    url("./assets/bg/event.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -62,9 +64,10 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   object-fit: cover;
   object-position: right bottom;
+  z-index: -1;
   opacity: 0.8;
 }
 

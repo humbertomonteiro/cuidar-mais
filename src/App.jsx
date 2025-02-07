@@ -21,6 +21,7 @@ import Footer from "./components/templates/Footer";
 import TopBar from "./components/sections/TopBar";
 import Videos from "./components/sections/Videos";
 import Tickets from "./components/sections/Tickets";
+import ScrollToTop from "./components/shared/ScrollToTop";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -58,12 +59,14 @@ function App() {
       <TopBar
         text={"Compre seu ingresso com menor valor!"}
         action={"link"}
-        textAction={"Comprar agora!"}
+        textAction={"COMPRAR INGRESSO"}
         linkAction={"#tickets"}
       />
+      {/* <ScrollToTop /> */}
       <Header />
       <Main>
         <OurMission />
+        <Tickets />
         <CarouselSimple
           slides={itemsSpeakers}
           numberSlidesView={visibleItems - 1}
@@ -71,38 +74,23 @@ function App() {
         />
         <Privilege />
         <Testimonials />
-        <Local />
         <CarouselScrollInfinit />
-        <Form />
-        <Tickets />
         <HalfiPrice />
         <BeSupport />
-        {/* <CarouselSimple
-          slides={ItemsSponsors}
-          numberSlidesView={visibleItems}
-          textTitle="Patrocinadores"
-          /> */}
-        <MusicTherapy />
-        <Videos />
-        <CarouselSimple
-          slides={itemsOurSevices}
-          textTitle="Nossos Serviços"
-          delay={4000}
-          numberSlidesView={visibleItems - 1}
-        />
+        <Local />
         <Questions />
         <Politic />
       </Main>
       <Footer />
       <div className="bubbles">
-        <img className="bg-top" src={bgTop} alt="Background Top" />
+        {/* <img className="bg-top" src={bgTop} alt="Background Top" /> */}
         <div className="cube"></div>
         <div className="cube"></div>
         <div className="cube"></div>
         <div className="cube"></div>
         <div className="cube"></div>
         <div className="cube"></div>
-        <img className="bg-bottom" src={bgBottom} alt="Background Bottom" />
+        {/* <img className="bg-bottom" src={bgBottom} alt="Background Bottom" /> */}
       </div>
     </>
   );
