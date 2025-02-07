@@ -29,6 +29,7 @@ import bgTop from "./assets/bg/bg-top1.jpg";
 import bgBottom from "./assets/bg/bg-bootm1.jpg";
 
 import { Toaster } from "react-hot-toast";
+import Testimonials from "./components/sections/Testimonials";
 
 function App() {
   const [visibleItems, setVisibleItems] = useState(4);
@@ -69,6 +70,7 @@ function App() {
           textTitle="Conheça nossos palestrantes"
         />
         <Privilege />
+        <Testimonials />
         <Local />
         <CarouselScrollInfinit />
         <Form />

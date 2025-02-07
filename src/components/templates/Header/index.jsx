@@ -2,13 +2,13 @@ import styles from "./header.module.css";
 import logo from "../../../assets/logos/logo.png";
 // import Button from "../../shared/Button";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import logosTel from "../../../assets/logos/logos-telefone.png";
+// import logosTel from "../../../assets/logos/logos-telefone.png";
 import { IoRocketOutline } from "react-icons/io5";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 const Header = () => {
   return (
-    <header data-aos="fade-up" className={styles.container}>
+    <header id="header" data-aos="fade-up" className={styles.container}>
       <div className={styles.phrase} data-aos="fade-right" data-aos-delay="600">
         <RiDoubleQuotesL className={styles.quotesTop} />
         <p>Cada aprendizado é uma peça que ajudasmos a encaixar</p>

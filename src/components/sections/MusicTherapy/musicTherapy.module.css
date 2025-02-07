@@ -3,6 +3,8 @@
   background-color: var(--color-4);
   border-radius: 1rem;
   align-items: center;
+  height: 80vh;
+  overflow: hidden;
 
   & .content {
     width: 50%;
