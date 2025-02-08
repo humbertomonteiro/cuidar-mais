@@ -5,25 +5,26 @@
   color: var(--text-dark);
 
   & .infos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 29% 40% 29%;
     gap: 1rem;
     background-color: var(--gray);
     border-bottom: 1px solid var(--border-color);
     padding: 1.5rem;
 
     & .info {
-      width: 30%;
-      min-width: 280px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       & img {
         width: 100%;
       }
 
       & .logo {
-        width: 220px;
+        width: 50%;
       }
 
       & h3 {
@@ -36,6 +37,7 @@
         display: flex;
         justify-content: space-around;
         font-size: 2rem;
+        gap: 1rem;
 
         & a {
           color: var(--text-light);
@@ -68,8 +70,18 @@
 @media (max-width: 480px) {
   .container {
     & .infos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      & .info:nth-child(3) {
+        grid-column: span 2;
+      }
       & .info {
         width: 100%;
+
+        & .logo {
+          width: 120px;
+        }
 
         & .links {
           font-size: 1.5rem;

@@ -3,7 +3,6 @@ import logo from "../../../assets/logos/logo.png";
 import logoTel from "../../../assets/logos/logos-telefone.png";
 
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -26,14 +25,8 @@ const Footer = () => {
             >
               <FaInstagram />
             </a>
-            <a
-              href="https://www.instagram.com/saludcuidarmais/"
-              target="_blank"
-            >
+            <a href="https://wa.me/5598988830200" target="_blank">
               <FaWhatsapp />
-            </a>
-            <a href="mailto:saludcuidarmais@gmail.com">
-              <MdOutlineEmail />
             </a>
           </div>
         </div>

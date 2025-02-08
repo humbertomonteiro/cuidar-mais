@@ -7,7 +7,7 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 500) {
         setShowButton(true);
       } else {
         setShowButton(false);
@@ -23,9 +23,13 @@ const ScrollToTop = () => {
   };
 
   return (
-    <button className={styles.button} onClick={scrollToTop}>
-      <FaArrowAltCircleUp />
-    </button>
+    <>
+      {showButton && (
+        <button className={styles.button} onClick={scrollToTop}>
+          <FaArrowAltCircleUp />
+        </button>
+      )}
+    </>
   );
 };
 

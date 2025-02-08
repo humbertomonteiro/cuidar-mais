@@ -12,6 +12,16 @@
       background-color: var(--color-5);
       padding: 1.5rem;
       border-radius: 1.5rem;
+
+      & .boxesItems {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        & > div {
+          width: 33%;
+        }
+      }
     }
 
     & p {
@@ -26,15 +36,6 @@
       display: flex;
       justify-content: space-around;
       gap: 1rem;
-    }
-
-    & .boxes {
-      display: flex;
-      gap: 1rem;
-
-      & > div {
-        width: 33%;
-      }
     }
 
     & .content {
@@ -85,10 +86,12 @@
   .containerSupport {
     & .container {
       & .boxes {
-        flex-direction: column;
+        & .boxesItems {
+          flex-direction: column;
 
-        & > div {
-          width: 100%;
+          & > div {
+            width: 100%;
+          }
         }
       }
     }

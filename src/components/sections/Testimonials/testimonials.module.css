@@ -11,7 +11,8 @@
   & .reviews {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+
+    /* align-items: flex-start; */
     overflow-x: auto;
 
     & .review {
@@ -24,6 +25,10 @@
         padding: 1.5rem;
         border-radius: 1.5rem;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
         & .quote {
           position: absolute;
@@ -43,6 +48,7 @@
         & p {
           line-height: 150%;
           color: var(--text-dark-2);
+          font-size: 0.8rem;
         }
 
         & .user {
@@ -73,5 +79,12 @@
           }
         } */
     }
+  }
+
+  & .button {
+    width: 400px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
   }
 }

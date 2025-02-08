@@ -155,14 +155,13 @@ const Tickets = () => {
 
   return (
     <Section>
-      <Title text="Ingressos Cuidar mais" align="center" />
+      <Title text="Ingressos " align="center" />
       <div id="tickets" data-aos="zoom-in" className={styles.container}>
         <div className={styles.content}>
           <h3>Ingressos Limitados – Garanta já sua participação!</h3>
           <p>
             Não perca o maior congresso sobre TEA do ano! Os ingressos estão
-            divididos em lotes, com preços promocionais para quem compra
-            antecipadamente.
+            divididos em lotes, com preços promocionais para quem comprar.
           </p>
           <strong>⚡ Confira os valores e garanta o melhor preço:</strong>
         </div>

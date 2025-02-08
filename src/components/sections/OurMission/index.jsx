@@ -1,13 +1,15 @@
 import styles from "./ourMission.module.css";
 import Section from "../../shared/Section";
 import ButtonSecondary from "../../shared/ButtonSecondary";
-import { FaInstagram, FaArrowDown } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 
-// import logosTel from "../../../assets/logos/logos-telefone.png";
-// import smartphone from "../../../assets/mocups/mocup-smartphone.png";
 import img1 from "../../../assets/events/foto-1.jpeg";
 import img2 from "../../../assets/events/foto-2.jpeg";
-// import congresso from "../../../assets/events/congresso.jpeg";
+import img3 from "../../../assets/events/event-1.jpg";
+import img4 from "../../../assets/events/event-2.jpg";
+import img5 from "../../../assets/events/event-3.jpg";
+import img6 from "../../../assets/events/event-4.jpg";
+import img7 from "../../../assets/events/event-5.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/effect-flip";
@@ -27,22 +29,11 @@ const OurMission = () => {
             sempre com empatia e respeito às necessidades de cada indivíduo.
           </p>
 
-          {/* <img src={logosTel} alt="logo congresso" /> */}
-
-          <ButtonSecondary
-            styleButton="secondary"
-            action="link"
-            link="https://www.instagram.com/saludcuidarmais/"
-            target="_blank"
-          >
-            Nos acompanhe <FaInstagram style={{ fontSize: "1.5rem" }} />
-          </ButtonSecondary>
           <ButtonSecondary action="link" link="#tickets">
             COMPRAR INGRESSO <FaArrowDown />
           </ButtonSecondary>
         </div>
         <div className={styles.img}>
-          {/* <img src={smartphone} alt="Celular com o instagram da cuidar mais" /> */}
           <Swiper
             effect={"flip"}
             grabCursor={true}
@@ -58,9 +49,21 @@ const OurMission = () => {
             <SwiperSlide>
               <img src={img2} alt="Imagem do evento" />
             </SwiperSlide>
-            {/* <SwiperSlide>
-              <img src={congresso} alt="Imagem do evento" />
-            </SwiperSlide> */}
+            <SwiperSlide>
+              <img src={img3} alt="Imagem do evento" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img4} alt="Imagem do evento" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img5} alt="Imagem do evento" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img6} alt="Imagem do evento" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img7} alt="Imagem do evento" />
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>

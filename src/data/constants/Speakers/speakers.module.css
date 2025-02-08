@@ -1,5 +1,5 @@
 .card {
-  max-width: 85%;
+  max-width: 100%;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
@@ -37,6 +37,8 @@
     & p {
       color: var(--text-dark-2);
       line-height: 150%;
+      height: 100px;
+      overflow-y: scroll;
     }
   }
 

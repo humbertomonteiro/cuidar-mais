@@ -1,6 +1,6 @@
 import styles from "./carouselSimple.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import Title from "../Title";
 import Section from "../Section";
 
@@ -24,7 +24,8 @@ const CarouselSimple = ({
             delay: delay,
             disableOnInteraction: false,
           }}
-          modules={[Pagination, Autoplay]}
+          navigation={true}
+          modules={[Pagination, Autoplay, Navigation]}
           className={styles.slides}
         >
           {slides.map((slide) => (

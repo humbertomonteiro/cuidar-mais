@@ -4,6 +4,7 @@ import Title from "../../shared/Title";
 import Section from "../../shared/Section";
 
 import multicenter from "../../../assets/videos/multiCenter.mp4";
+import ButtonSecondary from "../../shared/ButtonSecondary";
 
 const Local = () => {
   return (
@@ -28,6 +29,9 @@ const Local = () => {
                 <li>⁠Fácil acesso</li>
                 <li>⁠Estacionamento seguro e amplo</li>
               </ul>
+              <ButtonSecondary action={"link"} link={"#tickets"}>
+                COMPRAR INGRESSO
+              </ButtonSecondary>
             </div>
             <div className={styles.map}>
               <iframe
