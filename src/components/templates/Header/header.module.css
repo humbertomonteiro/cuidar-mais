@@ -5,15 +5,15 @@
   max-height: 950px;
   margin-bottom: 1.5rem;
   position: relative;
-  background-image: linear-gradient(to right, #7b4397d8, #dc2430e7),
+  background-image: linear-gradient(to right, #7b4397c9, #dc2430d5),
     url("../../../assets/bg/bg-event.jpg");
-  background-size: cover;
+  background-size: cover bottom;
   background-position: center top;
   background-repeat: no-repeat;
   background-color: #062c4e;
   overflow-x: hidden;
 
-  & .bgTop {
+  /* & .bgTop {
     width: 100%;
     position: absolute;
     top: 0px;
@@ -30,7 +30,7 @@
     opacity: 0.2;
     mix-blend-mode: multiply;
     z-index: -1;
-  }
+  } */
 }
 
 .content {

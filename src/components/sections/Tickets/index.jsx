@@ -20,7 +20,7 @@ const Item1 = ({ setFormGetData, setLink, setGroup }) => {
       <strong className={styles.sale}>40% OFF</strong>
       <div className={styles.boxContent}>
         <span>Ingresso</span>
-        <h4>Pré-venda</h4>
+        <h4>Pré-venda - Ingresso INTEIRO</h4>
         <h5>Disponível até:</h5>
         <p>15/03 ou enquanto durar</p>
       </div>
@@ -56,16 +56,56 @@ const Item1 = ({ setFormGetData, setLink, setGroup }) => {
               <IoTicketOutline style={{ fontSize: "1.2rem" }} />
             </ButtonSecondary>
           </div>
+        </div>
+        <a href="#half-price">Garanta sua meia entrada clicando aqui</a>
+      </div>
+    </div>
+  );
+};
+
+const Item2 = ({ setFormGetData, setLink, setGroup }) => {
+  const handleBuyTicket = (link) => {
+    setFormGetData(true);
+    setLink(link);
+  };
+  return (
+    <div className={styles.box} data-active="true">
+      <strong className={styles.sale}>40% OFF</strong>
+      <div className={styles.boxContent}>
+        <span>Ingresso</span>
+        <h4>Pré-venda - Ingresso GRUPO</h4>
+        <h5>Disponível até:</h5>
+        <p>15/03 ou enquanto durar</p>
+      </div>
+      <div className={styles.boxValue}>
+        <h4>
+          <span>de:</span>{" "}
+          <s>
+            R$ 839,90 <br />
+          </s>{" "}
+          <span>por:</span> <strong>10X de </strong>R$ 44,90
+          <span>/ por unidade</span>
+        </h4>
+        <ul>
+          <li>Garanta o seu ingresso com o menor valor!</li>
+          <li>Economize mais 40% no valor do ingresso!</li>
+          <li>Garanta sua vaga em um evento único com especialistas em TEA.</li>
+          <li>
+            Participe do networking com profissionais e familiares engajados no
+            tema.
+          </li>
+        </ul>
+        <div className={styles.buttons}>
           <div className={styles.button}>
             <span>
               Venha em grupo e garanta um desconto de R$50 por pessoa. Você tem
               que adquirir no minimo 5 ingressos para garantir o desconto.
-              (Desconto mínimo de R$ 250,00)
+              (Desconto de R$ 250,00)
             </span>
-            <div>
+            {/* <div>
               <strong>10X de R$ 44,90</strong>
               <span>por unidade</span>
-            </div>
+            </div> */}
             <ButtonSecondary
               style={{ width: "100%" }}
               action="button"
@@ -85,7 +125,7 @@ const Item1 = ({ setFormGetData, setLink, setGroup }) => {
   );
 };
 
-const Item2 = () => {
+const Item3 = () => {
   return (
     <div className={styles.box}>
       <strong className={styles.sale}>30% OFF</strong>
@@ -117,7 +157,7 @@ const Item2 = () => {
   );
 };
 
-const Item3 = () => {
+const Item4 = () => {
   return (
     <div className={styles.box}>
       <strong className={styles.sale}>20% OFF</strong>
@@ -171,8 +211,13 @@ const Tickets = () => {
             setLink={setLink}
             setGroup={setGroup}
           />
-          <Item2 />
+          <Item2
+            setFormGetData={setFormGetData}
+            setLink={setLink}
+            setGroup={setGroup}
+          />
           <Item3 />
+          {/* <Item4 /> */}
         </div>
         {formGetData && (
           <FormGetData
