@@ -39,7 +39,7 @@
 
         & a {
           color: var(--text-light);
-          background-color: var(--color-1);
+          background-color: var(--button-primary);
           border: 1px solid var(--border-color);
           padding: 0.5rem;
           width: 60px;

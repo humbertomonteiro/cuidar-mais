@@ -19,7 +19,7 @@ const Testimonials = () => {
       />
 
       <div className={styles.reviews}>
-        <div className={styles.review} data-aos="fade-up" data-aos-delay="200">
+        <div className={styles.review} data-aos="fade-up">
           <div className={styles.content}>
             <div className={styles.quote}>
               <BiSolidQuoteRight />
@@ -54,7 +54,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className={styles.review} data-aos="fade-up" data-aos-delay="500">
+        <div className={styles.review} data-aos="fade-up">
           <div className={styles.content}>
             <div className={styles.quote}>
               <BiSolidQuoteRight />
@@ -86,7 +86,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className={styles.review} data-aos="fade-up" data-aos-delay="800">
+        <div className={styles.review} data-aos="fade-up">
           <div className={styles.content}>
             <div className={styles.quote}>
               <BiSolidQuoteRight />

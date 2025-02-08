@@ -9,13 +9,13 @@
 
   & h3 {
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     font-size: 1.7rem;
   }
 
   & ul {
     padding: 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

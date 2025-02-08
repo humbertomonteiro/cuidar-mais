@@ -12,7 +12,7 @@ import { TbArrowBigRightLine } from "react-icons/tb";
 
 const BeSupport = () => {
   return (
-    <Section>
+    <section className={styles.containerSupport}>
       <Title text="Seja um Apoiador" align="center" />
       <div data-aos="zoom-in" className={styles.container}>
         {/* <p>
@@ -68,7 +68,7 @@ const BeSupport = () => {
           </ButtonSecondary>
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 

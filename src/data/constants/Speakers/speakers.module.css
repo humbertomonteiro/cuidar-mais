@@ -9,7 +9,7 @@
   overflow: hidden;
   padding: 1rem;
   padding-bottom: 2rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   border: 1px solid var(--white);
   position: relative;
   box-shadow: 0 0 8px #acacac;
@@ -19,7 +19,7 @@
     height: 150px;
     object-fit: cover;
     aspect-ratio: 16 / 9;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     border: 1px solid var(--border-color);
     z-index: 1;
     box-shadow: 0 0 8px #acacac;
