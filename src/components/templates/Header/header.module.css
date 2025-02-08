@@ -6,6 +6,7 @@
   margin-bottom: 1.5rem;
   position: relative;
   background-color: var(--gray);
+  overflow-x: hidden;
 
   & .bgTop {
     width: 100%;
