@@ -20,7 +20,7 @@ const Item1 = ({ setFormGetData, setLink, setGroup }) => {
       <strong className={styles.sale}>40% OFF</strong>
       <div className={styles.boxContent}>
         <span>Ingresso</span>
-        <h4>Pré-venda - Ingresso INTEIRO</h4>
+        <h4>Pré-venda - Ingresso INDIVIDUAL</h4>
         <h5>Disponível até:</h5>
         <p>15/03 ou enquanto durar</p>
       </div>
