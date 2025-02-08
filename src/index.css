@@ -5,7 +5,7 @@
   --color-2: #e91e63;
   --color-3: #ffd26a;
   --color-4: #7c22dd98;
-  --color-5: #f8f8f8e5;
+  --color-5: #fcfcfce5;
 
   --text-light: #ffffff;
   --text-light-2: #f9f9f9;
@@ -14,7 +14,7 @@
   --text-dark-2: #212121;
 
   --border-color: #b0d1ce;
-  --divider-color: #dceae9;
+  --divider-color: #dce ae9;
 
   --white: #fff;
   --gray: #e9e9e9;
@@ -44,9 +44,9 @@ body {
 }
 
 .bubbles {
-  background-image: linear-gradient(135deg, #c40f4bef, #3a4cb4de),
-    url("./assets/bg/event.png");
-  background-size: cover;
+  /* url("./assets/bg/event.png") */
+  background-image: linear-gradient(135deg, #c40f4bef, #3a4cb4de);
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #062c4e;

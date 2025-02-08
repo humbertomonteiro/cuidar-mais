@@ -5,13 +5,20 @@
   max-height: 950px;
   margin-bottom: 1.5rem;
   position: relative;
-  background-color: var(--gray);
+  background-image: linear-gradient(to right, #7b4397d8, #dc2430e7),
+    url("../../../assets/bg/bg-event.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #062c4e;
   overflow-x: hidden;
 
   & .bgTop {
     width: 100%;
     position: absolute;
-    top: -60px;
+    top: 0px;
+    opacity: 0.2;
+    mix-blend-mode: multiply;
     z-index: -1;
   }
 
@@ -20,6 +27,8 @@
     position: absolute;
     bottom: -0px;
     left: 0;
+    opacity: 0.2;
+    mix-blend-mode: multiply;
     z-index: -1;
   }
 }
@@ -41,13 +50,13 @@
 
   & h1 {
     font-size: 2.8rem;
-    color: var(--text-dark);
+    color: var(--text-light);
   }
 
   & p {
     line-height: 150%;
     max-width: 800px;
-    color: var(--text-dark-2);
+    color: var(--text-light-2);
   }
 }
 

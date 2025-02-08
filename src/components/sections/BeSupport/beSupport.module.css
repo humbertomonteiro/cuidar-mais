@@ -54,7 +54,7 @@
         text-align: center;
 
         & span {
-          color: var(--color-2);
+          color: var(--button-primary);
         }
       }
 
