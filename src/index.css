@@ -89,14 +89,14 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 30%;
-  border: solid 1px #cbd7ec;
+  border: solid 1px #adadadde;
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   -webkit-animation: cube 12s ease-in forwards infinite;
   animation: cube 19s ease-in forwards infinite;
 }
 .cube:nth-child(2n) {
-  border-color: var(--border-color);
+  border-color: #999999dc;
 }
 .cube:nth-child(2) {
   -webkit-animation-delay: 2s;

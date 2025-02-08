@@ -5,6 +5,21 @@
   max-height: 950px;
   margin-bottom: 1.5rem;
   position: relative;
+  background-color: var(--gray);
+
+  & .bgTop {
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    z-index: -1;
+  }
+
+  & .bgBottom {
+    width: 100%;
+    position: absolute;
+    bottom: -0px;
+    z-index: -1;
+  }
 }
 
 .phrase {
@@ -54,13 +69,13 @@
 
   & h1 {
     font-size: 2.8rem;
-    color: var(--text-light);
+    color: var(--text-dark);
   }
 
   & p {
     line-height: 150%;
     max-width: 800px;
-    color: var(--text-light-2);
+    color: var(--text-dark-2);
   }
 }
 
@@ -92,6 +107,11 @@
 }
 
 @media (max-width: 480px) {
+  .container {
+    & .bgTop {
+      top: 20px;
+    }
+  }
   .content {
     & h1 {
       font-size: 2.2rem;

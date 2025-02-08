@@ -4,7 +4,9 @@ import logo from "../../../assets/logos/logo.png";
 import ButtonSecondary from "../../shared/ButtonSecondary";
 // import logosTel from "../../../assets/logos/logos-telefone.png";
 import { IoRocketOutline } from "react-icons/io5";
-import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
+// import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
+import bgTop from "../../../assets/bg/bg-top1.jpg";
+import bgBottom from "../../../assets/bg/bg-bootm1.jpg";
 
 const Header = () => {
   return (
@@ -14,6 +16,7 @@ const Header = () => {
         <p>Cada aprendizado é uma peça que ajudasmos a encaixar</p>
         <RiDoubleQuotesR className={styles.quotesBottom} />
       </div> */}
+      <img src={bgTop} alt="background top" className={styles.bgTop} />
       <div className={styles.content}>
         <img src={logo} alt="Logo Salud" />
         <h1>Terceira edição do nosso Congresso!</h1>
@@ -26,6 +29,7 @@ const Header = () => {
           COMPRAR INGRESSO <IoRocketOutline style={{ fontSize: "1.7rem" }} />
         </ButtonSecondary>
       </div>
+      <img src={bgBottom} alt="background bottom" className={styles.bgBottom} />
 
       {/* <div className={styles.logos}>
         <img src={logosTel} alt="organizadores do projeto" />
